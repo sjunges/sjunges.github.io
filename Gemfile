@@ -24,6 +24,7 @@ group :jekyll_plugins do
   # gem "jekyll-archives"
   gem "jekyll-feed"
   gem 'jekyll-gist'
+  gem 'jekyll-redirect-from'
   gem 'jekyll-sitemap'
   gem 'hawkins'
 end
