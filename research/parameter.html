@@ -1,0 +1,418 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Parameter Synthesis in Markov Models - Sebastian Junges</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Sebastian Junges">
+<meta property="og:title" content="Parameter Synthesis in Markov Models">
+
+
+  <link rel="canonical" href="https://sjunges.github.io/research/parameter">
+  <meta property="og:url" content="https://sjunges.github.io/research/parameter">
+
+
+
+  <meta property="og:description" content="Markov models assume a fixed transition probability. However, often these transition probabilities are based on expert estimates or learned from data. It is therefore natural to consider symbolic probabilities in the form of parameters, and investigate for which parameter values a model satisfies a given specification. My thesis (missing reference) covers various aspects of parameter synthesis in Markov models. It also covers aspects of structural synthesis via sketching.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Sebastian Junges",
+      "url" : "https://sjunges.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://sjunges.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Sebastian Junges Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://sjunges.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://sjunges.github.io/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="https://sjunges.github.io/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="https://sjunges.github.io/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="https://sjunges.github.io/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="https://sjunges.github.io/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="https://sjunges.github.io/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="https://sjunges.github.io/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="https://sjunges.github.io/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="https://sjunges.github.io/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="https://sjunges.github.io/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="https://sjunges.github.io/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="https://sjunges.github.io/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="https://sjunges.github.io/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="https://sjunges.github.io/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="https://sjunges.github.io/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="https://sjunges.github.io/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="https://sjunges.github.io/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://sjunges.github.io/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://sjunges.github.io/">Sebastian Junges</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://sjunges.github.io/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://sjunges.github.io/research/">Research</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://sjunges.github.io/teaching/">Teaching</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://sjunges.github.io/cv/">CV</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://www.stormchecker.org">Storm</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://sjunges.github.io/images/profile.jpg" class="author__avatar" alt="Sebastian Junges">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Sebastian Junges</h3>
+    <p class="author__bio">Computer Scientist developing trustworthy algorithms to evaluate system dependability.</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Berkeley</li>
+      
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> University of California at Berkeley</li>
+      
+      
+      
+      
+       
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/sebastian-junges"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/sjunges"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=anwAmOEAAAAJ"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      
+      
+      
+        <li><a href="https://orcid.org/0000-0003-0978-8466"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Parameter Synthesis in Markov Models">
+    <meta itemprop="description" content="Markov models assume a fixed transition probability. However, often these transition probabilities are based on expert estimates or learned from data. It is therefore natural to consider symbolic probabilities in the form of parameters, and investigate for which parameter values a model satisfies a given specification. My thesis (missing reference) covers various aspects of parameter synthesis in Markov models. It also covers aspects of structural synthesis via sketching.">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Parameter Synthesis in Markov Models
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>Markov models assume a fixed transition probability. However, often these transition probabilities are based on expert estimates or learned from data. 
+It is therefore natural to consider symbolic probabilities in the form of parameters, and investigate for which parameter values a model satisfies a given specification. 
+My thesis (missing reference) covers various aspects of parameter synthesis in Markov models. It also covers aspects of structural synthesis via <a href="synt">sketching</a>.</p>
+
+<h2 id="feasibility-synthesis">Feasibility synthesis</h2>
+<p>In feasibility synthesis, the question is whether parameter values can be substituted with constant values such that the obtained Markov model satisfies a goal. This setting is particularly relevant for controllable parameters, e.g., if these parameters encode the bias of a coin flip in a randomized algorithm.</p>
+
+<p>Prophesy <a class="citation" href="#DBLP:conf/cav/DehnertJJCVBKA15">(Dehnert et al., 2015)</a> yields some support for this, but the methods based on convex optimization techniques <a class="citation" href="#DBLP:conf/tacas/Cubuktepe0JKPPT17">(Cubuktepe et al., 2017; Cubuktepe et al., 2018)</a>, in particular the latter based on QCQP, is currently state-of-the-art.</p>
+
+<h2 id="verification">Verification</h2>
+<p>For the verification problem, we want to show that for all parameter values, a particular property of the induced model holds. This setting is thus dual to the feasibility problem. While SMT-based approaches can work for small problems <a class="citation" href="#DBLP:conf/cav/DehnertJJCVBKA15">(Dehnert et al., 2015)</a>, an abstraction-based method called parameter lifting is much more succesful <a class="citation" href="#DBLP:conf/atva/QuatmannD0JK16">(Quatmann et al., 2016)</a>.</p>
+
+<p>The verification problem remains hard. We observe that many systems naturally exhibit monotonic behavior in the parameters, e.g., a network protocol is more reliable with more reliable network channels. We have developed methods to detect monotonicity <a class="citation" href="#DBLP:conf/atva/SpelJK19">(Spel et al., 2019)</a>, and to exploit monotonicity to speed up parameter lifting <a class="citation" href="#DBLP:conf/tacas/SpelJK21">(Spel et al., 2021)</a>.</p>
+
+<h2 id="distributions-over-parameters">Distributions over parameters</h2>
+<p>Rather than a controllable or adverserial view on parameters, parameters sometimes describe environment conditions that are themselves uncertain. For example, parameters in a pMC may describe the transition probabilities in dependence of the wind speed. The wind and thus the value of the parameter is determined by a distribution. In <a class="citation" href="#DBLP:conf/tacas/Cubuktepe0JKT20">(Cubuktepe et al., 2020)</a> we consider scenario-optimization to determine with which probability the parameter values induce a pMC that satisfies a declarative constraint.</p>
+
+<h2 id="connection-to-policies-for-pomdps">Connection to Policies for POMDPs</h2>
+
+<p>Policies that optimize reachability probabilities in <a href="pomdps">partially observable MDPs</a> (POMDPs) require infinite memory. A natural restriction is to consider finite memory policies. As the memory can always be considered part of the POMDP state space, considering finite memory policies can be reduced to the special case of memoryless policies. Memoryless policies in POMDPs take in all states with observation x some action with probability p. Thus, the induced Markov chain of an POMDP with an arbitrary memoryless policy can be described by a parametric Markov chain, and thus the problem of finding a memoryless POMDP policy can be reduced to finding parameter values in a pMC. The construction can be inverted, and thus, the problems are equally hard. <a class="citation" href="#DBLP:conf/uai/Junges0WQWK018">(Junges et al., 2018)</a>.</p>
+
+<h2 id="complexity">Complexity</h2>
+
+<p>We surveyed the computational complexity in <a class="citation" href="#DBLP:conf/concur/WinklerJPK19">(Winkler et al., 2019; Junges et al., 2021)</a>.</p>
+
+<p>The feasibility question for pMCs is (assuming nonstrict inequalities) ETR-complete. 
+ETR (Existential Theory of the Reals) is a complexity class inbetween NP and PSPACE and the conceptually simplest ETR complete problem is whether a multivatiate polynomial has a real root. 
+The ETR membership follows from a straightforward generalization of the Bellman equations to the parametric case, in which we obtain a linear equation system over the field of rational functions. 
+ETR hardness is already obtained for a simple class of acyclic pMCs.</p>
+
+<p>The pMDP case is also ETR-complete (independent of the used inequality).
+Hardness follows trivially from the pMC case, whereas the membership requires a generalization of the LP formulation for reachabilty in MDPs.</p>
+
+<p>Despite these results, it is noticeable that for any fixed number of parameters, there is a polynomial algorithm for solving feasibility in pMCs <a class="citation" href="#DBLP:journals/iandc/BaierHHJKK20">(Baier et al., 2020)</a>.</p>
+
+<h2 id="references">References</h2>
+
+<ol class="bibliography"><li><span id="DBLP:conf/cav/DehnertJJCVBKA15">Dehnert, C., Junges, S., Jansen, N., Corzilius, F., Volk, M., Bruintjes, H., Katoen, J.-P., &amp; Ábrahám, E. (2015). PROPhESY: A PRObabilistic ParamEter SYnthesis Tool. <i>CAV</i>, <i>9206</i>, 214–231.</span></li>
+<li><span id="DBLP:conf/tacas/Cubuktepe0JKPPT17">Cubuktepe, M., Jansen, N., Junges, S., Katoen, J.-P., Papusha, I., Poonawala, H. A., &amp; Topcu, U. (2017). Sequential Convex Programming for the Efficient Verification of Parametric
+               MDPs. <i>TACAS</i>, <i>10206</i>, 133–150.</span></li>
+<li><span id="DBLP:conf/atva/CubuktepeJJKT18">Cubuktepe, M., Jansen, N., Junges, S., Katoen, J.-P., &amp; Topcu, U. (2018). Synthesis in pMDPs: A Tale of 1001 Parameters. <i>ATVA</i>, <i>11138</i>, 160–176.</span></li>
+<li><span id="DBLP:conf/atva/QuatmannD0JK16">Quatmann, T., Dehnert, C., Jansen, N., Junges, S., &amp; Katoen, J.-P. (2016). Parameter Synthesis for Markov Models: Faster Than Ever. <i>ATVA</i>, <i>9938</i>, 50–67.</span></li>
+<li><span id="DBLP:conf/atva/SpelJK19">Spel, J., Junges, S., &amp; Katoen, J.-P. (2019). Are Parametric Markov Chains Monotonic? <i>ATVA</i>, <i>11781</i>, 479–496.</span></li>
+<li><span id="DBLP:conf/tacas/SpelJK21">Spel, J., Junges, S., &amp; Katoen, J.-P. (2021). Finding Provably Optimal Markov Chains. <i>TACAS</i>, <i>12651</i>, 173–190.</span></li>
+<li><span id="DBLP:conf/tacas/Cubuktepe0JKT20">Cubuktepe, M., Jansen, N., Junges, S., Katoen, J.-P., &amp; Topcu, U. (2020). Scenario-Based Verification of Uncertain MDPs. <i>TACAS</i>, <i>12078</i>, 287–305.</span></li>
+<li><span id="DBLP:conf/uai/Junges0WQWK018">Junges, S., Jansen, N., Wimmer, R., Quatmann, T., Winterer, L., Katoen, J.-P., &amp; Becker, B. (2018). Finite-State Controllers of POMDPs using Parameter Synthesis. <i>UAI</i>, 519–529.</span></li>
+<li><span id="DBLP:conf/concur/WinklerJPK19">Winkler, T., Junges, S., Pérez, G. A., &amp; Katoen, J.-P. (2019). On the Complexity of Reachability in Parametric Markov Decision Processes. <i>CONCUR</i>, <i>140</i>, 14:1–14:17.</span></li>
+<li><span id="DBLP:journals/jcss/JungesK0W21">Junges, S., Katoen, J.-P., Pérez, G. A., &amp; Winkler, T. (2021). The complexity of reachability in parametric Markov decision processes. <i>J. Comput. Syst. Sci.</i>, <i>119</i>, 183–210.</span></li>
+<li><span id="DBLP:journals/iandc/BaierHHJKK20">Baier, C., Hensel, C., Hutschenreiter, L., Junges, S., Katoen, J.-P., &amp; Klein, J. (2020). Parametric Markov chains: PCTL complexity and fraction-free Gaussian
+               elimination. <i>Inf. Comput.</i>, <i>272</i>, 104504.</span></li></ol>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="https://sjunges.github.io/research/fault-trees" class="pagination--pager" title="Fault Trees and Reliability Engineering
+">Previous</a>
+    
+    
+      <a href="https://sjunges.github.io/research/modelchecking" class="pagination--pager" title="Probabilistic Model Checking
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/sjunges"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://sjunges.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Sebastian Junges. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://sjunges.github.io/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+
