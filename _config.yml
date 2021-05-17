@@ -181,7 +181,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  research:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -202,6 +202,13 @@ defaults:
       comments: true
       share: true
       related: true
+  # _research
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: single
+      author_profile: true
   # _pages
   - scope:
       path: ""
@@ -307,3 +314,10 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+scholar:
+  style: apa
+  locale: en
+
+
+
