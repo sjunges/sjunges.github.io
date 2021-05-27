@@ -7,6 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
+* TOC
+{:toc}
 
 Bachelor and Master projects
 ----------------------------
