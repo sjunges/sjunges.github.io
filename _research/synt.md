@@ -16,7 +16,7 @@ Both approaches can be efficiently combined using a method described in {% cite 
 
 Tool support
 ------------
-The algorithms above have all been implemented in [PAYNT](https://github.com/gargantophob/synthesis). 
+The algorithms above have all been implemented in [PAYNT](https://github.com/gargantophob/synthesis) {% cite unpublished:paynt %}. 
 
 
 References
