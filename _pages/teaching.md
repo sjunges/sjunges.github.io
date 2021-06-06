@@ -34,8 +34,8 @@ Runtime monitoring requires us to argue about aspects of the system state based 
 Examples of more concrete topics include the connection to automata learning for runtime monitors, connecting methods to realistic simulation environments, and extending existing theory towards a richer body of models and properties or developing new algorithms. 
 
 In this direction:
-- We have projects regarding case studies, implementations, and new theory
-- You should like to work on a novel research problem
+- We have projects regarding case studies, implementations, and new theory.
+- You should like to work on a novel research problem.
 
 ### Direction: Learning to remember just a little bit in sequential decision making
 Sequential decision making in settings where the decision making agent only has partial information means that the agent has to remember previous observations. 
@@ -67,8 +67,8 @@ In this topic, we will consider new methods to analyse systems that are describe
 For this, we consider new modelling formalisms from the literature and develop theory matching the problem statement. From there onwards, we can define algorithms to solve the problem. 
 
 In this topic, 
-You should not be afraid of integrals
-Interest in statistics and automata theory is helpful 
+- You should not be afraid of integrals.
+- Interest in statistics and automata theory is helpful.
 
 
 #### Topic: A JANI Interface to Probabilistic Inference
@@ -78,8 +78,8 @@ Dice is a probabilistic inference tool that can compute posterior distributions 
 In previous work, we have shown that model checking Markov chains via Dice is an interesting and promising method. We aim to improve this method and make it applicable to a larger class of models.  The primary challenge in this topic is to construct a transpiler that takes a JANI model and outputs an equivalent DICE probabilistic program. A prototype for translating PRISM programs to DICE provides some guidance. 
 
 In this topic,
-You should like to implement software
-Interest in compilers and automata theory is helpful 
+- You should like to implement software.
+- Interest in compilers and automata theory is helpful.
 
 
 ### Previously supervised (2015-2020)
