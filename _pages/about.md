@@ -10,7 +10,10 @@ redirect_from:
 
 *This website is under construction*
 
-I am a researcher and have been a PostDoc at UC Berkeley since March 2020. I am part of the Learn and Verify Group, headed by Sanjit Seshia. 
+I am a researcher interested in the analysis of safety-critical systems.
+Starting in September, I will join the faculty of the Software Sciences group at the Radboud University as an assistant professor. 
+
+Currently, I am a researcher and have been a PostDoc at UC Berkeley since March 2020. I am part of the Learn and Verify Group, headed by Sanjit Seshia. 
 
 Previously, I was a PhD student at [RWTH Aachen University](https://moves.rwth-aachen.de/), under the supervision of Joost-Pieter Katoen. 
 I defended my PhD thesis titled [Parameter Synthesis in Markov Models](http://doi.org/10.18154/RWTH-2020-02348) [(pdf)](http://publications.rwth-aachen.de/record/783179/files/783179.pdf) in February 2020.  

@@ -17,7 +17,11 @@ Education
 
 Work experience
 ======
-* Feb 2020 - now: Postdoctoral Researcher
+* Sep 2021 - now: Assistant Professor
+  * Radboud University, Nijmegen
+  * Software Sciences Group
+
+* Feb 2020 - Aug 2021: Postdoctoral Researcher
   * University of California at Berkeley
   * Learn and Verify Group, headed by Sanjit Seshia
 
@@ -28,9 +32,58 @@ Work experience
 Publications
 ======
 
-{% bibliography %}
+### 2021
+
+{% bibliography --query @*[year=2021]  %}
+
+### 2020
+
+{% bibliography --query @*[year=2020] %}
+
+### 2019
+
+{% bibliography --query @*[year=2019] %}
+
+### 2018 
+
+{% bibliography --query @*[year=2018] %}
+
+### 2017
+
+{% bibliography --query @*[year=2017] %}
+
+### 2016
+
+{% bibliography --query @*[year=2016] %}
+
+### 2015
+
+{% bibliography --query @*[year=2015] %}
+
+### 2014
+
+{% bibliography --query @*[year=2014] %}
+
+### 2013
+
+{% bibliography --query @*[year=2013] %}
+
+### 2012
+
+{% bibliography --query @*[year=2012] %}
+
 
   
+Talks (Since 2020)
+======
+(Conference presentations associated with a paper are not listed)
+
+- OWLS 2020
+- DESTION 2021
+- GI Kolloquium
+- FUNCTION 2021
+
+
 Teaching
 ======
 {% comment %}  <ul>{% for post in site.teaching %}
@@ -82,7 +135,7 @@ Academic Service
 
 ### PC/AE
 #### 2021
-AAAI, QAVS, QEST (AE)
+AAAI, QAVS, QEST (AE), SYNT, SETTA
 
 #### 2020
 FORMATS, SETTA, SYNT, QAVS
@@ -94,6 +147,6 @@ ATVA (AE)
 
 ### External Reviewer
 #### Conferences
-ATVA, ADHS, CAV, CDC, Concur, FM, FSEN, FORTE, Gandalf, HVC, ICALP, iFM, L4DC,  Memocode, MMB, PSI, QEST, SafeComp, TACAS
+ATVA, ADHS, CAV, CDC, Concur, FM, FSEN, FORTE, Gandalf, HVC, ICALP, iFM, L4DC,  Memocode, MMB, PSI, SPIN, QEST, SafeComp, TACAS
 #### Journals
 FMSD, J. Intelligent Robot Syst, J.Systems and Software, JCST, Machine Learning, STTT
