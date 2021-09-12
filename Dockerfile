@@ -5,6 +5,8 @@ COPY Gemfile .
 COPY Gemfile.lock .
 
 RUN gem install bundler:2.2.27
+RUN chown jekyll:jekyll /srv/jekyll/Gemfile.lock && chown jekyll:jekyll /srv/jekyll/Gemfile
+
 RUN bundle install
 
 EXPOSE 4000
