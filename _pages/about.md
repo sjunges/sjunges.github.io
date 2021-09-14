@@ -10,7 +10,7 @@ redirect_from:
 
 I am a researcher interested in the analysis of safety-critical systems. 
 
-I have been an Assistant Professor (UD) at the [Software Science Group](https://www.sws.cs.ru.nl) of the [Radboud University](https://www.ru.nl/icis/) in Nijmegen, the Netherlands, since September 2021x. 
+I have been an Assistant Professor (UD) at the [Software Science Group](https://www.sws.cs.ru.nl) of the [Radboud University](https://www.ru.nl/icis/) in Nijmegen, the Netherlands, since September 2021. 
 Previously, I was a PostDoc at UC Berkeley as part of the Learn and Verify Group headed by Sanjit Seshia. 
 Before, I was a PhD student at [RWTH Aachen University](https://moves.rwth-aachen.de/), under the supervision of Joost-Pieter Katoen. 
 I defended my PhD thesis titled [Parameter Synthesis in Markov Models](http://doi.org/10.18154/RWTH-2020-02348) [(pdf)](http://publications.rwth-aachen.de/record/783179/files/783179.pdf) in February 2020.  
