@@ -315,9 +315,11 @@ compress_html:
   ignore:
     envs: development
 
-scholar:
-  style: apa
+scholar: 
+  bibliography_template: bib
+  style: _bibliography/customstyle
   locale: en
+  bibliography_group_tag: b
 
 
 
