@@ -32,6 +32,10 @@ Work experience
 Publications
 ======
 
+### 2022
+
+{% bibliography --query @*[year=2022]  %}
+
 ### 2021
 
 {% bibliography --query @*[year=2021]  %}
