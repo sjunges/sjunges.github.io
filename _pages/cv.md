@@ -83,10 +83,10 @@ Talks (Since 2020)
 (Conference presentations associated with a paper are not listed)
 
 - OWLS 2020
-- DESTION 2021
-- GI Kolloquium
-- FUNCTION 2021
-
+- Runtime Monitoring in Markov Decision Processes, DESTION 2021, RP 2021
+- Parameter Synthesis in Markov Models, OWLS 2020, GI Kolloquium 2021
+- Complexity of Memoryless Policies in POMDPs, FUNCTION 2021
+- Panelist at RL-CONFORM 2021
 
 Teaching
 ======
@@ -133,24 +133,26 @@ Teaching
 Academic Service
 ======
 ### Organization
-- VeriProp 2021 (co-located with CAV)
+- VeriProp 2021, 2022 (co-located with CAV)
 - I co-organised the 1st and 2nd UnRAVEL Spring Meetings.
 - I co-organised the 'Aachener Informatik Tage', a STEM-outreach event for highschool pupils, several times.
 
 ### PC/AE
+
+#### 2022
+FormaliSE, FORMATS, QAVS, QEST
+
 #### 2021
-AAAI, QAVS, QEST (AE), SYNT, SETTA
+AAAI, QAVS, QEST (AE), SETTA, SYNT
 
 #### 2020
-FORMATS, SETTA, SYNT, QAVS
+FORMATS, QAVS, SETTA, SYNT
 
 #### 2019
 ATVA (AE)
 
-### Editorial
-
 ### External Reviewer
 #### Conferences
-ATVA, ADHS, CAV, CDC, Concur, FM, FSEN, FORTE, Gandalf, HVC, ICALP, iFM, L4DC,  Memocode, MMB, PSI, SPIN, QEST, SafeComp, TACAS
+ATVA, ADHS, CAV, CDC, Concur, FM, FSEN, FORTE, FOSSACS, Gandalf, HVC, ICALP, iFM, L4DC,  Memocode, MMB, PSI, SPIN, QEST, SafeComp, TACAS
 #### Journals
 FMSD, J. Intelligent Robot Syst, J.Systems and Software, JCST, Machine Learning, STTT
