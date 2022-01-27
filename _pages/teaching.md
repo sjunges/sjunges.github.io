@@ -10,6 +10,10 @@ author_profile: true
 * TOC
 {:toc}
 
+Courses
+----------------------------
+In 2021/2022, I teach Object-Oriented Programming for first year's and Model Checking in the master. 
+
 Bachelor and Master projects
 ----------------------------
 I always look forward and enjoy to working with motivated students. I list some directions and concrete topics below, but I am also happy to hear your ideas!
