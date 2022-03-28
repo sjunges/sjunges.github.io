@@ -133,8 +133,10 @@ Teaching
 Academic Service
 ======
 ### Organization
+- Dagstuhl Seminar 'Scalable Analysis of Probabilistic Models and Programs'
 - VeriProp 2021, 2022 (co-located with CAV)
-- I co-organised the 1st and 2nd UnRAVEL Spring Meetings.
+- ROCKS 2022 Workshop
+- I co-organised the 1st and 2nd UnRAVeL Spring Meetings (2018, 2019).
 - I co-organised the 'Aachener Informatik Tage', a STEM-outreach event for highschool pupils, several times.
 
 ### PC/AE
@@ -143,7 +145,7 @@ Academic Service
 FM
 
 #### 2022
-FormaliSE, FORMATS, QAVS, QEST
+FormaliSE, FORMATS, QAVS, QEST, SETTA
 
 #### 2021
 AAAI, QAVS, QEST (AE), SETTA, SYNT
