@@ -82,10 +82,10 @@ Talks (Since 2020)
 ======
 (Conference presentations associated with a paper are not listed)
 
-- OWLS 2020
 - Runtime Monitoring in Markov Decision Processes, DESTION 2021, RP 2021
-- Parameter Synthesis in Markov Models, OWLS 2020, GI Kolloquium 2021
-- Complexity of Memoryless Policies in POMDPs, FUNCTION 2021
+- Parameter Synthesis in Markov Models, OWLS 2020 (invited), GI Kolloquium 2021
+- Complexity of Memoryless Policies in POMDPs, FUNCTION 2021 (invited)
+- Synthesising Probabilistic Programs, SynCop 2022 (invited)
 - Panelist at RL-CONFORM 2021
 
 Teaching
@@ -138,6 +138,9 @@ Academic Service
 - I co-organised the 'Aachener Informatik Tage', a STEM-outreach event for highschool pupils, several times.
 
 ### PC/AE
+
+#### 2023
+FM
 
 #### 2022
 FormaliSE, FORMATS, QAVS, QEST
