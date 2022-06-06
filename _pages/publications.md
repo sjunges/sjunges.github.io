@@ -5,13 +5,9 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% include base_path %}
+### 2022
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
-
-## Complete list
+{% bibliography --query @*[year=2022]  %}
 
 ### 2021
 
@@ -52,4 +48,5 @@ author_profile: true
 ### 2012
 
 {% bibliography --query @*[year=2012] %}
+
 

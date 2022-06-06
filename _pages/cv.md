@@ -28,56 +28,12 @@ Work experience
 * Jun 2015 - Feb 2020: Research Assistant
   * RWTH Aachen University
   * Chair for Software Modeling and Verification, headed by Joost-Pieter Katoen
-  
+
 Publications
 ======
-
-### 2022
-
-{% bibliography --query @*[year=2022]  %}
-
-### 2021
-
-{% bibliography --query @*[year=2021]  %}
-
-### 2020
-
-{% bibliography --query @*[year=2020] %}
-
-### 2019
-
-{% bibliography --query @*[year=2019] %}
-
-### 2018 
-
-{% bibliography --query @*[year=2018] %}
-
-### 2017
-
-{% bibliography --query @*[year=2017] %}
-
-### 2016
-
-{% bibliography --query @*[year=2016] %}
-
-### 2015
-
-{% bibliography --query @*[year=2015] %}
-
-### 2014
-
-{% bibliography --query @*[year=2014] %}
-
-### 2013
-
-{% bibliography --query @*[year=2013] %}
-
-### 2012
-
-{% bibliography --query @*[year=2012] %}
+See the list of [publications](../publications).
 
 
-  
 Talks (Since 2020)
 ======
 (Conference presentations associated with a paper are not listed)
@@ -158,6 +114,6 @@ ATVA (AE)
 
 ### External Reviewer
 #### Conferences
-ATVA, ADHS, CAV, CDC, Concur, FM, FSEN, FORTE, FOSSACS, Gandalf, HVC, ICALP, iFM, L4DC,  Memocode, MMB, PSI, SPIN, QEST, SafeComp, TACAS
+ATVA, ADHS, CAV, CDC, Concur, FM, FMCAD, FSEN, FORTE, FOSSACS, Gandalf, HVC, ICALP, iFM, L4DC,  Memocode, MMB, PSI, SPIN, QEST, SafeComp, TACAS
 #### Journals
-FMSD, J. Intelligent Robot Syst, J.Systems and Software, JCST, Machine Learning, STTT
+FMSD, J. Intelligent Robot Syst, J.Systems and Software, JCST, Machine Learning, STTT, Trans. Autom. Control

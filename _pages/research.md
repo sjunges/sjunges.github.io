@@ -10,7 +10,7 @@ author_profile: true
 I am broadly interested in the design and analysis of complex and robust (safety-)critical systems. 
 In particular, I am interested in modeling formalisms to describe such systems and the use of automated reasoning to analyse these systems. 
 Often, I develop such reasoning techniques myself. Many of these methods are rooted in 
-(probabilistic) model checking and satisfiability solvers.
+(probabilistic) model checking and satisfiability solvers. Also see my [list of publications](../publications)
 
 {% assign sorted_pages = site.research| sort:"order" %}
 {% for post in sorted_pages %}
