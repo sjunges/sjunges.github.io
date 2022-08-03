@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Computer Science, RWTH Aachen University, 2020 
+* Ph.D in Computer Science, RWTH Aachen University, 2020
 * M.Sc. in Computer Science, RWTH Aachen University, 2015
 * B.Sc. in Computer Science, RWTH Aachen University, 2012
 
@@ -51,7 +51,6 @@ Teaching
   {% endfor %}</ul>
 {%endcomment %}
 
-
 ### Thesis supervision
 - Tom Janson, Accelerated Model Repair using Heuristic Analysis of Subsystems (BSc, RWTH)
 - Tim Quatmann, Multi-Objective Model Checking for Markov Automata (MSc, RWTH)
@@ -62,12 +61,18 @@ Teaching
 - Sven Deserno,  Model Checking Families of Markov Chains (MSc, RWTH) -- together with Benjamin Kaminski
 - Jip Spel, Monotonicity in Markov Chains (MSc, University of Twente)
 - Dustin Jungen, SAT-Based Methods for Solving POMDP problems (MSc, RWTH)
-- Kevin Batz, Probabilistic IC3 (MSc, RWTH) -- together with Benjamin Kaminski and Christoph Matheja 
-- Marnix Suilen, Multi-environment MDPs -- with Nils Jansen
+- Kevin Batz, Probabilistic IC3 (MSc, RWTH) -- together with Benjamin Kaminski and Christoph Matheja
+- Marnix Suilen, Multi-environment MDPs (MSc, Radboud) -- with Nils Jansen
+- Stefan Boneschanscher, Feature-Based Random Constraints in Control Improvisation (BSc, Radboud)
+- Iwan Litjens, An MCTS-based AI playing The Crew (BSc, Radboud)
+
+### Lectures (Lecturer)
+- Object-Oriented Programming (Radboud, Spring 2022)
+- Model Checking (Radboud, Spring 2022)
 
 ### Lectures (Teaching Assistance)
 - Model Checking (RWTH, Winter 2019)
-- Datastructures and Algorithms (RWTH, Summer 2018) 
+- Datastructures and Algorithms (RWTH, Summer 2018)
 - Concurrency Theory (RWTH, Winter 2017)
 - Compiler Construction (RWTH, Summer 2017)
 - Introduction to Model Checking (RWTH, Summer 2016)
@@ -77,7 +82,7 @@ Teaching
 - Introduction to probabilistic model checking (UC Berkeley, Formal Methods, 2020)
 - On parameter synthesis (RWTH, Modeling and Verification of Probabilistic Systems, 2019)
 
-### Seminar Projects 
+### Seminar Projects
 - Introduction to Program Analysis (RWTH, Proseminar, Sumer 2019)
 - Trends and Pearls of Model Checking (RWTH, Seminar, Winter 2019)
 - Formal Verification Meets Machine Learning (RWTH, Seminar, Summer 2018)
@@ -89,16 +94,16 @@ Teaching
 Academic Service
 ======
 ### Organization
-- Dagstuhl Seminar 'Scalable Analysis of Probabilistic Models and Programs'
+- Dagstuhl Seminar 'Scalable Analysis of Probabilistic Models and Programs' (2023)
 - VeriProp 2021, 2022 (co-located with CAV)
 - ROCKS 2022 Workshop
-- I co-organised the 1st and 2nd UnRAVeL Spring Meetings (2018, 2019).
-- I co-organised the 'Aachener Informatik Tage', a STEM-outreach event for highschool pupils, several times.
+- the 1st and 2nd UnRAVeL Spring Meetings (2018, 2019).
+- the 'Aachener Informatik Tage', a STEM-outreach event for highschool pupils, several times.
 
 ### PC/AE
 
 #### 2023
-FM
+AAAI (safety track), FM
 
 #### 2022
 FormaliSE, FORMATS, QAVS, QEST, SETTA
