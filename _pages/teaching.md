@@ -12,7 +12,10 @@ author_profile: true
 
 Courses
 ----------------------------
-In 2021/2022, I teach Object-Oriented Programming for first year's and Model Checking in the master. 
+- Automated Reasoning 2022
+- Object Orientation 2022 
+- Model Checking 2022
+
 
 Bachelor and Master projects
 ----------------------------
@@ -86,7 +89,13 @@ In this topic,
 - Interest in compilers and automata theory is helpful.
 
 
-### Previously supervised (2015-2020)
+
+### Previously supervised 
+#### Since 2022
+- Stefan Boneschanscher, Feature-based Random Constraints in Control Improvisation (Bsc)
+- Iwan Litjens, an MCTS-based AI playing The Crew (Bsc)
+
+#### (2015-2020)
 - Marnix Suilen, Multi-environment MDPs -- with Nils Jansen
 - Kevin Batz, Probabilistic IC3 (MSc, RWTH) -- together with Benjamin Kaminski and Christoph Matheja 
 - Dustin Jungen, SAT-Based Methods for Solving POMDP problems (MSc, RWTH)

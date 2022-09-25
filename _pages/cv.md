@@ -38,37 +38,23 @@ Talks (Since 2020)
 ======
 (Conference presentations associated with a paper are not listed)
 
+- Neuro-Symbolic Reasoning in Probabilistic Systems, Dagstuhl 2022
+- POMDPs in Verification, Lorentz Center 2022
+- Synthesising Probabilistic Programs, SynCop 2022 (invited)
 - Runtime Monitoring in Markov Decision Processes, DESTION 2021, RP 2021
 - Parameter Synthesis in Markov Models, OWLS 2020 (invited), GI Kolloquium 2021
 - Complexity of Memoryless Policies in POMDPs, FUNCTION 2021 (invited)
-- Synthesising Probabilistic Programs, SynCop 2022 (invited)
 - Panelist at RL-CONFORM 2021
 
 Teaching
 ======
-{% comment %}  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-{%endcomment %}
 
-### Thesis supervision
-- Tom Janson, Accelerated Model Repair using Heuristic Analysis of Subsystems (BSc, RWTH)
-- Tim Quatmann, Multi-Objective Model Checking for Markov Automata (MSc, RWTH)
-- Ronja Nocon, Pattern-based detection of Monotonicity in Dynamic Fault Trees (BSc, RWTH) -- together with Matthias Volk
-- Michael Deutschen, GSPN Semantics for Dynamic Fault Trees (MSc, RWTH) -- together with Matthias Volk
-- Dustin Jungen, Repairs in Dynamic Fault Trees (BSc, RWTH) -- together with Matthias Volk
-- Sebastian Kruse, Model Checking a Wireless Token-Passing Network (MSc, RWTH)
-- Sven Deserno,  Model Checking Families of Markov Chains (MSc, RWTH) -- together with Benjamin Kaminski
-- Jip Spel, Monotonicity in Markov Chains (MSc, University of Twente)
-- Dustin Jungen, SAT-Based Methods for Solving POMDP problems (MSc, RWTH)
-- Kevin Batz, Probabilistic IC3 (MSc, RWTH) -- together with Benjamin Kaminski and Christoph Matheja
-- Marnix Suilen, Multi-environment MDPs (MSc, Radboud) -- with Nils Jansen
-- Stefan Boneschanscher, Feature-Based Random Constraints in Control Improvisation (BSc, Radboud)
-- Iwan Litjens, An MCTS-based AI playing The Crew (BSc, Radboud)
+See the list of recent [teaching activities and student projects](../teaching).
 
-### Lectures (Lecturer)
-- Object-Oriented Programming (Radboud, Spring 2022)
-- Model Checking (Radboud, Spring 2022)
+### Lectures (Teacher)
+- Automated Reasoning
+- Object Oriented Programming
+- Model Checking
 
 ### Lectures (Teaching Assistance)
 - Model Checking (RWTH, Winter 2019)
