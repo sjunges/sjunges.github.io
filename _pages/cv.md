@@ -89,7 +89,7 @@ Academic Service
 ### PC/AE
 
 #### 2023
-AAAI (safety track), FM
+AAAI (safety track), CAV, FM
 
 #### 2022
 FormaliSE, FORMATS, QAVS, QEST, SETTA
