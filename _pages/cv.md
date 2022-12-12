@@ -82,9 +82,11 @@ Academic Service
 ### Organization
 - Dagstuhl Seminar 'Scalable Analysis of Probabilistic Models and Programs' (2023)
 - VeriProp 2021, 2022 (co-located with CAV)
+- SEN Symposium 2023
 - ROCKS 2022 Workshop
 - the 1st and 2nd UnRAVeL Spring Meetings (2018, 2019).
-- the 'Aachener Informatik Tage', a STEM-outreach event for highschool pupils, several times.
+- the 'Aachener Informatik Tage', a STEM-outreach event for highschool pupils, several times 
+between 2009 and 2014
 
 ### PC/AE
 
