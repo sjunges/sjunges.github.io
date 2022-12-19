@@ -80,8 +80,8 @@ See the list of recent [teaching activities and student projects](../teaching).
 Academic Service
 ======
 ### Organization
-- Dagstuhl Seminar 'Scalable Analysis of Probabilistic Models and Programs' (2023)
-- VeriProp 2021, 2022 (co-located with CAV)
+- Dagstuhl Seminar 'Scalable Analysis of Probabilistic Models and Programs' 2023
+- VeriProp 2023, 2022, 2021 (co-located with CAV)
 - SEN Symposium 2023
 - ROCKS 2022 Workshop
 - the 1st and 2nd UnRAVeL Spring Meetings (2018, 2019).
@@ -91,7 +91,7 @@ between 2009 and 2014
 ### PC/AE
 
 #### 2023
-AAAI (safety track), CAV, FM
+AAAI (safety track), CAV, FM, ICTAC
 
 #### 2022
 FormaliSE, FORMATS, QAVS, QEST, SETTA
