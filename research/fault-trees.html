@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2022-12-19T00:46:06-08:00">
+  <meta property="article:published_time" content="2023-02-05T13:51:41-08:00">
 
 
 
@@ -149,6 +149,9 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://sjunges.github.io/">Sebastian Junges</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://sjunges.github.io/team/">Team</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://sjunges.github.io/research/">Research</a></li>
@@ -260,7 +263,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Fault Trees and Reliability Engineering">
     <meta itemprop="description" content="Fault trees are a prominent model in reliability engineering. They help express the occurence of a top-level failure in terms of faults in the system. We have studied the quantitative analysis of Fault Trees, in particular of an extension of Fault Trees called Dynamic Fault Trees.Dynamic Fault Trees allow for complex and order-dependent combinations of faults to be expressed capturing e.g. different failure rates of unused spare components">
-    <meta itemprop="datePublished" content="December 19, 2022">
+    <meta itemprop="datePublished" content="February 05, 2023">
     
 
     <div class="page__inner-wrap">
@@ -272,7 +275,7 @@
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-12-19T00:46:06-08:00">December 19, 2022</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-02-05T13:51:41-08:00">February 05, 2023</time></p>
         
         
              
@@ -289,21 +292,21 @@ Dynamic Fault Trees allow for complex and order-dependent combinations of faults
 <h2 id="semantics">Semantics</h2>
 
 <p>The semantics of DFTs are rather intricate as they are formed by independently developed elements with local semantics. Often, their interplay yields subtle quircks. 
-<a class="citation" href="#DBLP:conf/dsn/JungesGKS16">(Junges et al., 2016)</a>. We think that the best way to explain DFT semantics is using Petri nets. The semantic framework we developed supersedes various existing  semantics given to fault trees by varying some parameters of the semantics <a class="citation" href="#DBLP:conf/apn/JungesKS018">(Junges et al., 2018)</a></p>
+<a class="citation" href="#DBLP:conf/dsn/JungesGKS16">[1]</a>. We think that the best way to explain DFT semantics is using Petri nets. The semantic framework we developed supersedes various existing  semantics given to fault trees by varying some parameters of the semantics <a class="citation" href="#DBLP:conf/apn/JungesKS018">[2]</a></p>
 
 <h2 id="analysis">Analysis</h2>
 
 <p>We improved the state-of-the-art in the quantitative analysis of Dynamic Fault Trees using techniques from probabilistic <a href="modelchecking">model checking</a>
-<a class="citation" href="#DBLP:journals/tii/VolkJK18">(Volk et al., 2018)</a>.
-Earlier, we already showed that a model transformation on these fault trees allows for speed ups of one or more orders of magnitude <a class="citation" href="#DBLP:journals/fac/JungesGKRS17">(Junges et al., 2017)</a>.</p>
+<a class="citation" href="#DBLP:journals/tii/VolkJK18">[3]</a>.
+Earlier, we already showed that a model transformation on these fault trees allows for speed ups of one or more orders of magnitude <a class="citation" href="#DBLP:journals/fac/JungesGKRS17">[4]</a>.</p>
 
 <h2 id="case-study">Case study</h2>
 
-<p>Besides applying the results above to benchmarks from the literature, we used our tools to analyse various dependability metrics for the core EE part of a vehicle guidance system <a class="citation" href="#DBLP:journals/ress/GhadhabJKKV19">(Ghadhab et al., 2019)</a>.</p>
+<p>Besides applying the results above to benchmarks from the literature, we used our tools to analyse various dependability metrics for the core EE part of a vehicle guidance system <a class="citation" href="#DBLP:journals/ress/GhadhabJKKV19">[5]</a>.</p>
 
 <h2 id="references">References</h2>
 
-<ol class="bibliography"><li><span id="DBLP:conf/dsn/JungesGKS16">Junges, S., Guck, D., Katoen, J.-P., &amp; Stoelinga, M. (2016). Uncovering Dynamic Fault Trees. <i>DSN</i>, pp. 299–310, IEEE CS.</span>
+<ol class="bibliography"><li><span id="DBLP:conf/dsn/JungesGKS16">Sebastian Junges, Dennis Guck, Joost-Pieter Katoen, and Mariëlle Stoelinga, “Uncovering Dynamic Fault Trees,” in <i>DSN</i>, 2016.</span>
 
 <br />
 	
@@ -312,8 +315,8 @@ Earlier, we already showed that a model transformation on these fault trees allo
 
 
 </li>
-<li><span id="DBLP:conf/apn/JungesKS018">Junges, S., Katoen, J.-P., Stoelinga, M., &amp; Volk, M. (2018). One Net Fits All - A Unifying Semantics of Dynamic Fault Trees Using
-               GSPNs. <i>Petri Nets</i>, <i>LNCS</i> <i>10877</i>, pp. 272–293, Springer.</span>
+<li><span id="DBLP:conf/apn/JungesKS018">Sebastian Junges, Joost-Pieter Katoen, Mariëlle Stoelinga, and Matthias Volk, “One Net Fits All - A Unifying Semantics of Dynamic Fault Trees Using
+               GSPNs,” in <i>Petri Nets</i>, 2018.</span>
 
 <br />
 	
@@ -322,7 +325,7 @@ Earlier, we already showed that a model transformation on these fault trees allo
 
 
 </li>
-<li><span id="DBLP:journals/tii/VolkJK18">Volk, M., Junges, S., &amp; Katoen, J.-P. (2018). Fast Dynamic Fault Tree Analysis by Model Checking Techniques. <i>IEEE Trans. Industrial Informatics</i>, <i>14</i>(1), pp. 370–379.</span>
+<li><span id="DBLP:journals/tii/VolkJK18">Matthias Volk, Sebastian Junges, and Joost-Pieter Katoen, “Fast Dynamic Fault Tree Analysis by Model Checking Techniques,” <i>IEEE Trans. Industrial Informatics</i>, no. 1, 2018.</span>
 
 <br />
 	
@@ -331,7 +334,7 @@ Earlier, we already showed that a model transformation on these fault trees allo
 
 
 </li>
-<li><span id="DBLP:journals/fac/JungesGKRS17">Junges, S., Guck, D., Katoen, J.-P., Rensink, A., &amp; Stoelinga, M. (2017). Fault trees on a diet: automated reduction by graph rewriting. <i>Formal Asp. Comput.</i>, <i>29</i>(4), pp. 651–703.</span>
+<li><span id="DBLP:journals/fac/JungesGKRS17">Sebastian Junges, Dennis Guck, Joost-Pieter Katoen, Arend Rensink, and Mariëlle Stoelinga, “Fault trees on a diet: automated reduction by graph rewriting,” <i>Formal Asp. Comput.</i>, no. 4, 2017.</span>
 
 <br />
 	
@@ -340,13 +343,25 @@ Earlier, we already showed that a model transformation on these fault trees allo
 
 
 </li>
-<li><span id="DBLP:journals/ress/GhadhabJKKV19">Ghadhab, M., Junges, S., Katoen, J.-P., Kuntz, M., &amp; Volk, M. (2019). Safety analysis for vehicle guidance systems with dynamic fault trees. <i>Rel. Eng. and Sys. Safety</i>, <i>186</i>, pp. 37–50.</span>
+<li><span id="DBLP:journals/ress/GhadhabJKKV19">Majdi Ghadhab, Sebastian Junges, Joost-Pieter Katoen, Matthias Kuntz, and Matthias Volk, “Safety analysis for vehicle guidance systems with dynamic fault trees,” <i>Rel. Eng. and Sys. Safety</i>, 2019.</span>
 
 <br />
 	
 
+<a href="http://dx.doi.org/10.1016/j.ress.2019.02.005" target="_blank">
+	<img alt="DOI: 10.1016/j.ress.2019.02.005" src="https://img.shields.io/static/v1?label=&amp;message=DOI&amp;color=blue" />
+</a>
 
 
+<a href="https://arxiv.org/abs/1903.05361" target="_blank">
+	<img alt="arXiv: 1903.05361" src="https://img.shields.io/static/v1?label=&amp;message=arXiv&amp;color=A42C25" />
+</a>
+
+
+
+<a href="https://www.stormchecker.org/publications/dfts-for-vehicle-guidance-systems" target="_blank">
+	<img alt="further information" src="https://img.shields.io/static/v1?label=&amp;message=website&amp;color=009999" />
+</a>
 
 </li></ol>
 
@@ -410,7 +425,7 @@ Earlier, we already showed that a model transformation on these fault trees allo
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2022 Sebastian Junges. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2023 Sebastian Junges. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

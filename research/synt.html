@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2022-12-19T00:46:06-08:00">
+  <meta property="article:published_time" content="2023-02-05T13:51:41-08:00">
 
 
 
@@ -149,6 +149,9 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://sjunges.github.io/">Sebastian Junges</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://sjunges.github.io/team/">Team</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://sjunges.github.io/research/">Research</a></li>
@@ -260,7 +263,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Syntax-Guided Synthesis in Probabilistic Programs">
     <meta itemprop="description" content="As a variant to the parameter synthesis, we consider probabilistic programs with holes, where the right expression for the holes have to be synthesised.A technical difference to parameter synthesis is that we consider finite sets of programs with often different control flow diagrams.">
-    <meta itemprop="datePublished" content="December 19, 2022">
+    <meta itemprop="datePublished" content="February 05, 2023">
     
 
     <div class="page__inner-wrap">
@@ -272,7 +275,7 @@
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-12-19T00:46:06-08:00">December 19, 2022</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-02-05T13:51:41-08:00">February 05, 2023</time></p>
         
         
              
@@ -286,15 +289,15 @@
 A technical difference to parameter synthesis is that we consider finite sets of programs with often different control flow diagrams.</p>
 
 <h2 id="algorithms">Algorithms</h2>
-<p>We developed algorithms based on counterexample-guided inductive synthesis <a class="citation" href="#DBLP:conf/fm/CeskaHJK19">(Ceska et al., 2019; Ceska et al., 2021)</a> and abstraction-refinement <a class="citation" href="#DBLP:conf/tacas/CeskaJJK19">(Ceska et al., 2019)</a>, see also <a class="citation" href="#DBLP:conf/birthday/CeskaD0JK19">(Ceska et al., 2019)</a> for a high-level overview. 
-Both approaches can be efficiently combined using a method described in <a class="citation" href="#DBLP:conf/tacas/Andriushchenko021">(Andriushchenko et al., 2021)</a>.</p>
+<p>We developed algorithms based on counterexample-guided inductive synthesis <a class="citation" href="#DBLP:conf/fm/CeskaHJK19">[1], [2]</a> and abstraction-refinement <a class="citation" href="#DBLP:conf/tacas/CeskaJJK19">[3]</a>, see also <a class="citation" href="#DBLP:conf/birthday/CeskaD0JK19">[4]</a> for a high-level overview. 
+Both approaches can be efficiently combined using a method described in <a class="citation" href="#DBLP:conf/tacas/Andriushchenko021">[5]</a>.</p>
 
 <h2 id="tool-support">Tool support</h2>
-<p>The algorithms above have all been implemented in <a href="https://github.com/gargantophob/synthesis">PAYNT</a> <a class="citation" href="#unpublished:paynt">(Andriushchenko et al., 2021)</a>.</p>
+<p>The algorithms above have all been implemented in <a href="https://github.com/gargantophob/synthesis">PAYNT</a> <a class="citation" href="#unpublished:paynt">[6]</a>.</p>
 
 <h2 id="references">References</h2>
 
-<ol class="bibliography"><li><span id="DBLP:conf/fm/CeskaHJK19">Ceska, M., Hensel, C., Junges, S., &amp; Katoen, J.-P. (2019). Counterexample-Driven Synthesis for Probabilistic Program Sketches. <i>FM</i>, <i>LNCS</i> <i>11800</i>, pp. 101–120, Springer.</span>
+<ol class="bibliography"><li><span id="DBLP:conf/fm/CeskaHJK19">Milan Ceska, Christian Hensel, Sebastian Junges, and Joost-Pieter Katoen, “Counterexample-Driven Synthesis for Probabilistic Program Sketches,” in <i>FM</i>, 2019.</span>
 
 <br />
 	
@@ -303,7 +306,7 @@ Both approaches can be efficiently combined using a method described in <a class
 
 
 </li>
-<li><span id="unpublished:cegisjournal">Ceska, M., Hensel, C., Junges, S., &amp; Katoen, J.-P. (2021). Counterexample-guided Inductive Synthesis for Probabilistic Systems. <i>Formal Asp. Comput.</i></span>
+<li><span id="unpublished:cegisjournal">Milan Ceska, Christian Hensel, Sebastian Junges, and Joost-Pieter Katoen, “Counterexample-guided Inductive Synthesis for Probabilistic Systems,” <i>Formal Asp. Comput.</i>, 2021.</span>
 
 <br />
 	
@@ -316,7 +319,7 @@ Both approaches can be efficiently combined using a method described in <a class
 
 
 </li>
-<li><span id="DBLP:conf/tacas/CeskaJJK19">Ceska, M., Jansen, N., Junges, S., &amp; Katoen, J.-P. (2019). Shepherding Hordes of Markov Chains. <i>TACAS</i>, <i>LNCS</i> <i>11428</i>, pp. 172–190, Springer.</span>
+<li><span id="DBLP:conf/tacas/CeskaJJK19">Milan Ceska, Nils Jansen, Sebastian Junges, and Joost-Pieter Katoen, “Shepherding Hordes of Markov Chains,” in <i>TACAS</i>, 2019.</span>
 
 <br />
 	
@@ -325,8 +328,8 @@ Both approaches can be efficiently combined using a method described in <a class
 
 
 </li>
-<li><span id="DBLP:conf/birthday/CeskaD0JK19">Ceska, M., Dehnert, C., Jansen, N., Junges, S., &amp; Katoen, J.-P. (2019). Model Repair Revamped - - On the Automated Synthesis of Markov Chains
-               -. <i>From Reactive Systems to Cyber-Physical Systems</i>, <i>LNCS</i> <i>11500</i>, pp. 107–125, Springer.</span>
+<li><span id="DBLP:conf/birthday/CeskaD0JK19">Milan Ceska, Christian Dehnert, Nils Jansen, Sebastian Junges, and Joost-Pieter Katoen, “Model Repair Revamped - - On the Automated Synthesis of Markov Chains
+               -,” in <i>From Reactive Systems to Cyber-Physical Systems</i>, 2019.</span>
 
 <br />
 	
@@ -335,7 +338,7 @@ Both approaches can be efficiently combined using a method described in <a class
 
 
 </li>
-<li><span id="DBLP:conf/tacas/Andriushchenko021">Andriushchenko, R., Ceska, M., Junges, S., &amp; Katoen, J.-P. (2021). Inductive Synthesis for Probabilistic Programs Reaches New Horizons. <i>TACAS</i>, <i>LNCS</i> <i>12651</i>, pp. 191–209, Springer.</span>
+<li><span id="DBLP:conf/tacas/Andriushchenko021">Roman Andriushchenko, Milan Ceska, Sebastian Junges, and Joost-Pieter Katoen, “Inductive Synthesis for Probabilistic Programs Reaches New Horizons,” in <i>TACAS</i>, 2021.</span>
 
 <br />
 	
@@ -352,7 +355,7 @@ Both approaches can be efficiently combined using a method described in <a class
 
 
 </li>
-<li><span id="unpublished:paynt">Andriushchenko, R., Ceska, M., Junges, S., Katoen, J.-P., &amp; Stupinsky, S. (2021). PAYNT: A Tool for Inductive Synthesis of Probabilistic Programs. <i>CAV</i>, <i>LNCS</i> <i>12759</i>, pp. 856–869, Springer.</span>
+<li><span id="unpublished:paynt">Roman Andriushchenko, Milan Ceska, Sebastian Junges, Joost-Pieter Katoen, and Simon Stupinsky, “PAYNT: A Tool for Inductive Synthesis of Probabilistic Programs,” in <i>CAV</i>, 2021.</span>
 
 <br />
 	
@@ -430,7 +433,7 @@ Both approaches can be efficiently combined using a method described in <a class
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2022 Sebastian Junges. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2023 Sebastian Junges. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

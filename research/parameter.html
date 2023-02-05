@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2022-12-19T00:46:06-08:00">
+  <meta property="article:published_time" content="2023-02-05T13:51:41-08:00">
 
 
 
@@ -149,6 +149,9 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://sjunges.github.io/">Sebastian Junges</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://sjunges.github.io/team/">Team</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://sjunges.github.io/research/">Research</a></li>
@@ -260,7 +263,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Parameter Synthesis in Markov Models">
     <meta itemprop="description" content="Markov models assume a fixed transition probability. However, often these transition probabilities are based on expert estimates or learned from data. It is therefore natural to consider symbolic probabilities in the form of parameters, and investigate for which parameter values a model satisfies a given specification. My thesis (missing reference) covers various aspects of parameter synthesis in Markov models. It also covers aspects of structural synthesis via sketching.">
-    <meta itemprop="datePublished" content="December 19, 2022">
+    <meta itemprop="datePublished" content="February 05, 2023">
     
 
     <div class="page__inner-wrap">
@@ -272,7 +275,7 @@
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-12-19T00:46:06-08:00">December 19, 2022</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-02-05T13:51:41-08:00">February 05, 2023</time></p>
         
         
              
@@ -289,23 +292,23 @@ My thesis (missing reference) covers various aspects of parameter synthesis in M
 <h2 id="feasibility-synthesis">Feasibility synthesis</h2>
 <p>In feasibility synthesis, the question is whether parameter values can be substituted with constant values such that the obtained Markov model satisfies a goal. This setting is particularly relevant for controllable parameters, e.g., if these parameters encode the bias of a coin flip in a randomized algorithm.</p>
 
-<p>Prophesy <a class="citation" href="#DBLP:conf/cav/DehnertJJCVBKA15">(Dehnert et al., 2015)</a> yields some support for this, but the methods based on convex optimization techniques <a class="citation" href="#DBLP:conf/tacas/Cubuktepe0JKPPT17">(Cubuktepe et al., 2017; Cubuktepe et al., 2018)</a>, in particular the latter based on QCQP, is currently state-of-the-art.</p>
+<p>Prophesy <a class="citation" href="#DBLP:conf/cav/DehnertJJCVBKA15">[1]</a> yields some support for this, but the methods based on convex optimization techniques <a class="citation" href="#DBLP:conf/tacas/Cubuktepe0JKPPT17">[2], [3]</a>, in particular the latter based on QCQP, is currently state-of-the-art.</p>
 
 <h2 id="verification">Verification</h2>
-<p>For the verification problem, we want to show that for all parameter values, a particular property of the induced model holds. This setting is thus dual to the feasibility problem. While SMT-based approaches can work for small problems <a class="citation" href="#DBLP:conf/cav/DehnertJJCVBKA15">(Dehnert et al., 2015)</a>, an abstraction-based method called parameter lifting is much more succesful <a class="citation" href="#DBLP:conf/atva/QuatmannD0JK16">(Quatmann et al., 2016)</a>.</p>
+<p>For the verification problem, we want to show that for all parameter values, a particular property of the induced model holds. This setting is thus dual to the feasibility problem. While SMT-based approaches can work for small problems <a class="citation" href="#DBLP:conf/cav/DehnertJJCVBKA15">[1]</a>, an abstraction-based method called parameter lifting is much more succesful <a class="citation" href="#DBLP:conf/atva/QuatmannD0JK16">[4]</a>.</p>
 
-<p>The verification problem remains hard. We observe that many systems naturally exhibit monotonic behavior in the parameters, e.g., a network protocol is more reliable with more reliable network channels. We have developed methods to detect monotonicity <a class="citation" href="#DBLP:conf/atva/SpelJK19">(Spel et al., 2019)</a>, and to exploit monotonicity to speed up parameter lifting <a class="citation" href="#DBLP:conf/tacas/SpelJK21">(Spel et al., 2021)</a>.</p>
+<p>The verification problem remains hard. We observe that many systems naturally exhibit monotonic behavior in the parameters, e.g., a network protocol is more reliable with more reliable network channels. We have developed methods to detect monotonicity <a class="citation" href="#DBLP:conf/atva/SpelJK19">[5]</a>, and to exploit monotonicity to speed up parameter lifting <a class="citation" href="#DBLP:conf/tacas/SpelJK21">[6]</a>.</p>
 
 <h2 id="distributions-over-parameters">Distributions over parameters</h2>
-<p>Rather than a controllable or adverserial view on parameters, parameters sometimes describe environment conditions that are themselves uncertain. For example, parameters in a pMC may describe the transition probabilities in dependence of the wind speed. The wind and thus the value of the parameter is determined by a distribution. In <a class="citation" href="#DBLP:conf/tacas/Cubuktepe0JKT20">(Cubuktepe et al., 2020)</a> we consider scenario-optimization to determine with which probability the parameter values induce a pMC that satisfies a declarative constraint.</p>
+<p>Rather than a controllable or adverserial view on parameters, parameters sometimes describe environment conditions that are themselves uncertain. For example, parameters in a pMC may describe the transition probabilities in dependence of the wind speed. The wind and thus the value of the parameter is determined by a distribution. In <a class="citation" href="#DBLP:conf/tacas/Cubuktepe0JKT20">[7]</a> we consider scenario-optimization to determine with which probability the parameter values induce a pMC that satisfies a declarative constraint.</p>
 
 <h2 id="connection-to-policies-for-pomdps">Connection to Policies for POMDPs</h2>
 
-<p>Policies that optimize reachability probabilities in <a href="pomdps">partially observable MDPs</a> (POMDPs) require infinite memory. A natural restriction is to consider finite memory policies. As the memory can always be considered part of the POMDP state space, considering finite memory policies can be reduced to the special case of memoryless policies. Memoryless policies in POMDPs take in all states with observation x some action with probability p. Thus, the induced Markov chain of an POMDP with an arbitrary memoryless policy can be described by a parametric Markov chain, and thus the problem of finding a memoryless POMDP policy can be reduced to finding parameter values in a pMC. The construction can be inverted, and thus, the problems are equally hard. <a class="citation" href="#DBLP:conf/uai/Junges0WQWK018">(Junges et al., 2018)</a>.</p>
+<p>Policies that optimize reachability probabilities in <a href="pomdps">partially observable MDPs</a> (POMDPs) require infinite memory. A natural restriction is to consider finite memory policies. As the memory can always be considered part of the POMDP state space, considering finite memory policies can be reduced to the special case of memoryless policies. Memoryless policies in POMDPs take in all states with observation x some action with probability p. Thus, the induced Markov chain of an POMDP with an arbitrary memoryless policy can be described by a parametric Markov chain, and thus the problem of finding a memoryless POMDP policy can be reduced to finding parameter values in a pMC. The construction can be inverted, and thus, the problems are equally hard. <a class="citation" href="#DBLP:conf/uai/Junges0WQWK018">[8]</a>.</p>
 
 <h2 id="complexity">Complexity</h2>
 
-<p>We surveyed the computational complexity in <a class="citation" href="#DBLP:conf/concur/WinklerJPK19">(Winkler et al., 2019; Junges et al., 2021)</a>.</p>
+<p>We surveyed the computational complexity in <a class="citation" href="#DBLP:conf/concur/WinklerJPK19">[9], [10]</a>.</p>
 
 <p>The feasibility question for pMCs is (assuming nonstrict inequalities) ETR-complete. 
 ETR (Existential Theory of the Reals) is a complexity class inbetween NP and PSPACE and the conceptually simplest ETR complete problem is whether a multivatiate polynomial has a real root. 
@@ -315,11 +318,11 @@ ETR hardness is already obtained for a simple class of acyclic pMCs.</p>
 <p>The pMDP case is also ETR-complete (independent of the used inequality).
 Hardness follows trivially from the pMC case, whereas the membership requires a generalization of the LP formulation for reachabilty in MDPs.</p>
 
-<p>Despite these results, it is noticeable that for any fixed number of parameters, there is a polynomial algorithm for solving feasibility in pMCs <a class="citation" href="#DBLP:journals/iandc/BaierHHJKK20">(Baier et al., 2020)</a>.</p>
+<p>Despite these results, it is noticeable that for any fixed number of parameters, there is a polynomial algorithm for solving feasibility in pMCs <a class="citation" href="#DBLP:journals/iandc/BaierHHJKK20">[11]</a>.</p>
 
 <h2 id="references">References</h2>
 
-<ol class="bibliography"><li><span id="DBLP:conf/cav/DehnertJJCVBKA15">Dehnert, C., Junges, S., Jansen, N., Corzilius, F., Volk, M., Bruintjes, H., Katoen, J.-P., &amp; Ábrahám, E. (2015). PROPhESY: A PRObabilistic ParamEter SYnthesis Tool. <i>CAV</i>, <i>LNCS</i> <i>9206</i>, pp. 214–231, Springer.</span>
+<ol class="bibliography"><li><span id="DBLP:conf/cav/DehnertJJCVBKA15">Christian Dehnert <i>et al.</i>, “PROPhESY: A PRObabilistic ParamEter SYnthesis Tool,” in <i>CAV</i>, 2015.</span>
 
 <br />
 	
@@ -328,8 +331,8 @@ Hardness follows trivially from the pMC case, whereas the membership requires a 
 
 
 </li>
-<li><span id="DBLP:conf/tacas/Cubuktepe0JKPPT17">Cubuktepe, M., Jansen, N., Junges, S., Katoen, J.-P., Papusha, I., Poonawala, H. A., &amp; Topcu, U. (2017). Sequential Convex Programming for the Efficient Verification of Parametric
-               MDPs. <i>TACAS</i>, <i>LNCS</i> <i>10206</i>, pp. 133–150, Springer.</span>
+<li><span id="DBLP:conf/tacas/Cubuktepe0JKPPT17">Murat Cubuktepe <i>et al.</i>, “Sequential Convex Programming for the Efficient Verification of Parametric
+               MDPs,” in <i>TACAS</i>, 2017.</span>
 
 <br />
 	
@@ -338,7 +341,7 @@ Hardness follows trivially from the pMC case, whereas the membership requires a 
 
 
 </li>
-<li><span id="DBLP:conf/atva/CubuktepeJJKT18">Cubuktepe, M., Jansen, N., Junges, S., Katoen, J.-P., &amp; Topcu, U. (2018). Synthesis in pMDPs: A Tale of 1001 Parameters. <i>ATVA</i>, <i>LNCS</i> <i>11138</i>, pp. 160–176, Springer.</span>
+<li><span id="DBLP:conf/atva/CubuktepeJJKT18">Murat Cubuktepe, Nils Jansen, Sebastian Junges, Joost-Pieter Katoen, and Ufuk Topcu, “Synthesis in pMDPs: A Tale of 1001 Parameters,” in <i>ATVA</i>, 2018.</span>
 
 <br />
 	
@@ -347,7 +350,7 @@ Hardness follows trivially from the pMC case, whereas the membership requires a 
 
 
 </li>
-<li><span id="DBLP:conf/atva/QuatmannD0JK16">Quatmann, T., Dehnert, C., Jansen, N., Junges, S., &amp; Katoen, J.-P. (2016). Parameter Synthesis for Markov Models: Faster Than Ever. <i>ATVA</i>, <i>LNCS</i> <i>9938</i>, pp. 50–67, Springer.</span>
+<li><span id="DBLP:conf/atva/QuatmannD0JK16">Tim Quatmann, Christian Dehnert, Nils Jansen, Sebastian Junges, and Joost-Pieter Katoen, “Parameter Synthesis for Markov Models: Faster Than Ever,” in <i>ATVA</i>, 2016.</span>
 
 <br />
 	
@@ -356,10 +359,14 @@ Hardness follows trivially from the pMC case, whereas the membership requires a 
 
 
 </li>
-<li><span id="DBLP:conf/atva/SpelJK19">Spel, J., Junges, S., &amp; Katoen, J.-P. (2019). Are Parametric Markov Chains Monotonic? <i>ATVA</i>, <i>LNCS</i> <i>11781</i>, pp. 479–496, Springer.</span>
+<li><span id="DBLP:conf/atva/SpelJK19">Jip Spel, Sebastian Junges, and Joost-Pieter Katoen, “Are Parametric Markov Chains Monotonic?,” in <i>ATVA</i>, 2019.</span>
 
 <br />
 	
+
+<a href="http://dx.doi.org/10.1007/978-3-030-31784-3_28" target="_blank">
+	<img alt="DOI: 10.1007/978-3-030-31784-3_28" src="https://img.shields.io/static/v1?label=&amp;message=DOI&amp;color=blue" />
+</a>
 
 
 
@@ -369,7 +376,7 @@ Hardness follows trivially from the pMC case, whereas the membership requires a 
 
 
 </li>
-<li><span id="DBLP:conf/tacas/SpelJK21">Spel, J., Junges, S., &amp; Katoen, J.-P. (2021). Finding Provably Optimal Markov Chains. <i>TACAS</i>, <i>LNCS</i> <i>12651</i>, pp. 173–190, Springer.</span>
+<li><span id="DBLP:conf/tacas/SpelJK21">Jip Spel, Sebastian Junges, and Joost-Pieter Katoen, “Finding Provably Optimal Markov Chains,” in <i>TACAS</i>, 2021.</span>
 
 <br />
 	
@@ -382,7 +389,20 @@ Hardness follows trivially from the pMC case, whereas the membership requires a 
 
 
 </li>
-<li><span id="DBLP:conf/tacas/Cubuktepe0JKT20">Cubuktepe, M., Jansen, N., Junges, S., Katoen, J.-P., &amp; Topcu, U. (2020). Scenario-Based Verification of Uncertain MDPs. <i>TACAS</i>, <i>LNCS</i> <i>12078</i>, pp. 287–305, Springer.</span>
+<li><span id="DBLP:conf/tacas/Cubuktepe0JKT20">Murat Cubuktepe, Nils Jansen, Sebastian Junges, Joost-Pieter Katoen, and Ufuk Topcu, “Scenario-Based Verification of Uncertain MDPs,” in <i>TACAS</i>, 2020.</span>
+
+<br />
+	
+
+<a href="http://dx.doi.org/doi.org/10.1007/978-3-030-45190-5_16" target="_blank">
+	<img alt="DOI: doi.org/10.1007/978-3-030-45190-5_16" src="https://img.shields.io/static/v1?label=&amp;message=DOI&amp;color=blue" />
+</a>
+
+
+
+
+</li>
+<li><span id="DBLP:conf/uai/Junges0WQWK018">Sebastian Junges <i>et al.</i>, “Finite-State Controllers of POMDPs using Parameter Synthesis,” in <i>UAI</i>, 2018.</span>
 
 <br />
 	
@@ -391,25 +411,20 @@ Hardness follows trivially from the pMC case, whereas the membership requires a 
 
 
 </li>
-<li><span id="DBLP:conf/uai/Junges0WQWK018">Junges, S., Jansen, N., Wimmer, R., Quatmann, T., Winterer, L., Katoen, J.-P., &amp; Becker, B. (2018). Finite-State Controllers of POMDPs using Parameter Synthesis. <i>UAI</i>, pp. 519–529, AUAI Press.</span>
+<li><span id="DBLP:conf/concur/WinklerJPK19">Tobias Winkler, Sebastian Junges, Guillermo A. Pérez, and Joost-Pieter Katoen, “On the Complexity of Reachability in Parametric Markov Decision Processes,” in <i>CONCUR</i>, 2019.</span>
 
 <br />
 	
+
+<a href="http://dx.doi.org/10.4230/LIPIcs.CONCUR.2019.14" target="_blank">
+	<img alt="DOI: 10.4230/LIPIcs.CONCUR.2019.14" src="https://img.shields.io/static/v1?label=&amp;message=DOI&amp;color=blue" />
+</a>
 
 
 
 
 </li>
-<li><span id="DBLP:conf/concur/WinklerJPK19">Winkler, T., Junges, S., Pérez, G. A., &amp; Katoen, J.-P. (2019). On the Complexity of Reachability in Parametric Markov Decision Processes. <i>CONCUR</i>, <i>LIPIcs</i> <i>140</i>, pp. 14:1–14:17, Schloss Dagstuhl - LZI.</span>
-
-<br />
-	
-
-
-
-
-</li>
-<li><span id="DBLP:journals/jcss/JungesK0W21">Junges, S., Katoen, J.-P., Pérez, G. A., &amp; Winkler, T. (2021). The complexity of reachability in parametric Markov decision processes. <i>J. Comput. Syst. Sci.</i>, <i>119</i>, pp. 183–210.</span>
+<li><span id="DBLP:journals/jcss/JungesK0W21">Sebastian Junges, Joost-Pieter Katoen, Guillermo A. Pérez, and Tobias Winkler, “The complexity of reachability in parametric Markov decision processes,” <i>J. Comput. Syst. Sci.</i>, 2021.</span>
 
 <br />
 	
@@ -426,8 +441,8 @@ Hardness follows trivially from the pMC case, whereas the membership requires a 
 
 
 </li>
-<li><span id="DBLP:journals/iandc/BaierHHJKK20">Baier, C., Hensel, C., Hutschenreiter, L., Junges, S., Katoen, J.-P., &amp; Klein, J. (2020). Parametric Markov chains: PCTL complexity and fraction-free Gaussian
-               elimination. <i>Inf. Comput.</i>, <i>272</i>, pp. 104504.</span>
+<li><span id="DBLP:journals/iandc/BaierHHJKK20">Christel Baier, Christian Hensel, Lisa Hutschenreiter, Sebastian Junges, Joost-Pieter Katoen, and Joachim Klein, “Parametric Markov chains: PCTL complexity and fraction-free Gaussian
+               elimination,” <i>Inf. Comput.</i>, 2020.</span>
 
 <br />
 	
@@ -499,7 +514,7 @@ Hardness follows trivially from the pMC case, whereas the membership requires a 
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2022 Sebastian Junges. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2023 Sebastian Junges. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
