@@ -12,8 +12,8 @@ author_profile: true
 
 Courses
 ----------------------------
-- Automated Reasoning 2022
-- Object Orientation 2022 
+- Automated Reasoning 2022,2023
+- Object Orientation 2022,2023 
 - Model Checking 2022
 
 

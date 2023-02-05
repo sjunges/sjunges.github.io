@@ -3,6 +3,7 @@ title: "Probabilistic Model Checking"
 collection: research
 permalink: /research/modelchecking
 order: 10
+layout: archive
 ---
 
 A core part of my research considers the model-based analysis of (temporal,declaritive) specifications on Markov models such as Continous-Time Markov Chains, Markov Decision Processes, Markov Automata.

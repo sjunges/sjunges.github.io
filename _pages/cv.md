@@ -91,7 +91,7 @@ between 2009 and 2014
 ### PC/AE
 
 #### 2023
-AAAI (safety track), CAV, FM, ICTAC
+AAAI (safety track), CAV, FM, ICTAC, QEST
 
 #### 2022
 FormaliSE, FORMATS, QAVS, QEST, SETTA

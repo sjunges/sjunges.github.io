@@ -17,12 +17,15 @@ I defended my PhD thesis titled [Parameter Synthesis in Markov Models](http://do
 
 You can reach me at sjunges?cs.ru.nl. 
 
-## Research Interest
+## Research Goal
 
-Broadly, my research is in the analysis of autonomous systems and critical infrastructure. 
-Key aspects of my research cover the computational support for modelling, validation and verification of these systems.
+Computer science is moving fast and the automation of critical infrastructure is accelerating, also due to the advent of AI. With this power comes the responsibility to ensure that such 
+automated processes are dependable, but our ability to certify that these systems are safe this is lagging behind. My goal is to close the gap between the automated systems we build and systems 
+that we can certify . Challenging questions include:  *How can we enforce safe decision-making for drones landing in the presence of ground vehicles?* *Which test suites may certify 
+that road vehicles adhere to safety standards?*
+Answering these questions requires reasoning about system evolutions while considering the inherent uncertainty about such systems. This reasoning uses extensions  of 
+Markov 
+decision processes (MDPs). Central to my work is developing novel verification algorithms for MDPs: 
+These algorithms have been for network protocols, hardware architectures, railroad infrastructure, UAV decision making, etcetera. My research mostly falls within the area of formal methods and 
+has some overlap with artificial intelligence.  
 
-Most of my research is model-based, and I lay particular focus on the algorithmic support for  models that explicitly model uncertainty.  
-More precisely, I often work with probabilistic model checkers and SAT/SMT solvers. 
-I analyze extensions of Markov decision processes (MDPs), in particular also parametric or partially observable MDPs. 
-My research is largely driven by the development and implementation of algorithms. 

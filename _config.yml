@@ -317,7 +317,7 @@ compress_html:
 
 scholar: 
   bibliography_template: bib
-  style: _bibliography/customstyle
+  style: _bibliography/ieee.csl 
   locale: en
   bibliography_group_tag: b
 
