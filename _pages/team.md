@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 Our team is part of the [software science departement](https://sws.cs.ru.nl) at the [Institute for Computing and Information Sciences](https://www.ru.nl/icis/).
-We often actively collaborate with other teams within the departement.
+We actively collaborate with other teams within the departement.
 
 PhD students
 --------------------
