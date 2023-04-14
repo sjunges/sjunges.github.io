@@ -90,6 +90,9 @@ between 2009 and 2014
 
 ### PC/AE
 
+#### 2024
+TACAS
+
 #### 2023
 AAAI (safety track), CAV, FM, ICTAC, iFM, QEST, SYNT, TiCSA, UAI
 
