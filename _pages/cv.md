@@ -17,7 +17,7 @@ Education
 
 Work experience
 ======
-* Sep 2021 - now: Assistant Professor
+* Sep 2021 - now: Assistant Professor (tenured)
   * Radboud University, Nijmegen
   * Software Sciences Group
 

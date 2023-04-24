@@ -20,16 +20,10 @@ PhD students
 Master Research Interns & Master Thesis Students
 ---------------------------------
 * Menno Bartels
-* Maris Galesloot, joint with [Nils Jansen](https://njansen123.github.io)
-* Wietze Koops, joint with [Nils Jansen](https://njansen123.github.io)
+* Johan Sijtsma
 
 Guests
 --------------------
 * Kazuki Watanabe, from NII Tokyo, 03/2023 to 09/2023, hosted with [Jurriaan Rot](http://jurriaan.me).
 
 Want to visit? Send us an email!
-
-
-Previous guests (at least a week)
----------------------------------
-* Roman Andriushchenko, Brno University of Technology, 1 week, 2021

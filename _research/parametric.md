@@ -3,11 +3,16 @@ title: "Parameter Synthesis in Markov Models"
 collection: research
 permalink: /research/parameter
 order: 30
+layout: archive
 ---
 
 Markov models assume a fixed transition probability.
 However, often these transition probabilities are based on expert estimates or learned from data.
 It is therefore natural to consider symbolic probabilities in the form of parameters, and investigate for which parameter values a model satisfies a given specification.
+
+
+Overview
+------------------
 My thesis {% cite DBLP:phd/dnb/Junges20 %} covers various aspects of parameter synthesis in Markov models.
 It also covers aspects of structural synthesis via [sketching](synt).
 We recently published a survey {% cite DBLP:conf/birthday/0001JK22 %} that gives a gentle introduction into the topic.
