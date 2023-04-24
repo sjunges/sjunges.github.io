@@ -37,7 +37,7 @@
 
 
 
-  <meta property="og:description" content="A core part of my research considers the model-based analysis of (temporal,declaritive) specifications on Markov models such as Continous-Time Markov Chains, Markov Decision Processes, Markov Automata.Much of the work in probabilistic control program sketching, fault trees builds on top of model checking, and often, those applications required extension to the model checking algorithms.">
+  <meta property="og:description" content="A core part of my research considers the model-based analysis of (temporal,declaritive) specifications on Markov models such as Continous-Time Markov Chains, Markov Decision Processes, Markov Automata.">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2023-04-14T07:44:09-07:00">
+  <meta property="article:published_time" content="2023-04-24T05:14:18-07:00">
 
 
 
@@ -262,8 +262,7 @@
     
       <h1 class="page__title">Probabilistic Model Checking</h1>
     
-    <p>A core part of my research considers the model-based analysis of (temporal,declaritive) specifications on Markov models such as Continous-Time Markov Chains, Markov Decision Processes, Markov Automata.
-Much of the work in <a href="synt">probabilistic control program sketching</a>, <a href="fault-trees">fault trees</a> builds on top of model checking, and often, those applications required extension to the model checking algorithms.</p>
+    <p>A core part of my research considers the model-based analysis of (temporal,declaritive) specifications on Markov models such as Continous-Time Markov Chains, Markov Decision Processes, Markov Automata.</p>
 
 <h2 id="multi-objective-randomization-and-resources">Multi-objective, Randomization and Resources</h2>
 
@@ -272,23 +271,38 @@ Much of the work in <a href="synt">probabilistic control program sketching</a>, 
 <p>Multi-objective model checking asks whether there is a policy that satisfies multiple properties at once. In <a class="citation" href="#DBLP:conf/cav/QuatmannJK17">[3], [4]</a> we consider this problem for Markov automata, a composable variant of continuous-time MDPs.
 In <a class="citation" href="#unpublished:erci">[5]</a>, we looked at a combination of reachability probabilities and randomization constraints. Such constraints enforce that the policy randomizes sufficiently, a property useful for testing and obfuscation.</p>
 
+<h2 id="hierarchical-models">Hierarchical models</h2>
+<p>We recently started to support hierarchical MDPs, in particular, by presenting an abstraction-refinement loop <a class="citation" href="#"></a> that uses similarities between different parts of a hierarchical MDP.</p>
+
 <h2 id="symbolic-model-checking">Symbolic model checking</h2>
 
-<p>We developed PrIC3 <a class="citation" href="#DBLP:conf/cav/BatzJKKMS20">[6]</a>, an extension of the hugely succesful IC3 methodology to MDPs.
-While the approach is not yet competitive on the typical benchmarks, the approach shows superior scalibility on some benchmarks.</p>
+<p>We developed PrIC3 <a class="citation" href="#DBLP:conf/cav/BatzJKKMS20">[6]</a>, an extension of the hugely successful IC3 methodology to MDPs.
+While the approach is not yet competitive on the typical benchmarks, the approach shows superior scalability on some benchmarks.</p>
 
-<p>Furthermore, probabilistic model checking for finite horizons is related to probabilistic inference in probabilistic programs. 
-In <a class="citation" href="#unpublished:rubicon">[7]</a>, we explored the use of exact inference algorithms for probabilistic model checking and show that the performance is orthogonal to existing approaches.</p>
+<p>We showed that CEGIS-style approaches to find inductive invariants can be a feasible alternative on (very large) MDPs <a class="citation" href="#unpublished:cegisinvariants">[7]</a></p>
+
+<p>Furthermore, probabilistic model checking for finite horizons is related to probabilistic inference in probabilistic programs.
+In <a class="citation" href="#unpublished:rubicon">[8]</a>, we explored the use of exact inference algorithms for probabilistic model checking and show that the performance is orthogonal to existing approaches.</p>
 
 <h2 id="tool-support">Tool support</h2>
 
-<p>Together with a group of co-developers, we provide state-of-the-art tool support for probabilistic model checking in the tool <a href="www.stormchecker.org">Storm</a> (missing reference). 
+<p>Together with a group of co-developers, we provide state-of-the-art tool support for probabilistic model checking in the tool <a href="www.stormchecker.org">Storm</a> (missing reference).
 Storm has a superior performance, as shown on the QCOMP 2019 and QCOMP 2020, and its Python API allows for flexible interfacing.</p>
 
-<p>Besides Storm, I have worked on the development of JANI <a class="citation" href="#DBLP:conf/tacas/BuddeDHHJT17">[8]</a>, whose format is the basis for the QCOMP.</p>
+<p>Besides Storm, I have worked on the development of JANI <a class="citation" href="#DBLP:conf/tacas/BuddeDHHJT17">[9]</a>, whose format is the basis for the QCOMP and smaller prototypes that accompany individual papers.</p>
 
 <h2 id="case-studies">Case studies</h2>
-<p>Besides the research areas mentioned at the top of the page, we have done some additional case studies, in particular for model checking a wireless token protocol for machine-to-machine communication <a class="citation" href="#DBLP:conf/srds/DombrowskiJKG16">[9]</a> and model checking behavior learned via Inverse RL <a class="citation" href="#DBLP:conf/qest/Junges0KTZH18">[10]</a>.</p>
+<p>Besides the research areas mentioned at the top of the page, we have done some additional case studies, in particular for model checking a wireless token protocol for machine-to-machine communication <a class="citation" href="#DBLP:conf/srds/DombrowskiJKG16">[10]</a> and model checking behavior learned via Inverse RL <a class="citation" href="#DBLP:conf/qest/Junges0KTZH18">[11]</a>.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>Much of my work on</p>
+<ul>
+  <li><a href="pomdps">POMDPs</a>,</li>
+  <li><a href="pmc">parameter synthesis</a>,</li>
+  <li><a href="synt">probabilistic control program sketching</a>, and</li>
+  <li><a href="fault-trees">fault trees</a>
+builds on top of model checking, and often, those applications required extension to the model checking algorithms.</li>
+</ul>
 
 <h2 id="references">References</h2>
 
@@ -396,6 +410,24 @@ Storm has a superior performance, as shown on the QCOMP 2019 and QCOMP 2020, and
 </a>
 
 </li>
+<li><span id="unpublished:cegisinvariants">Kevin Batz, Mingshuai Chen, Sebastian Junges, Benjamin Lucien Kaminski, Joost-Pieter Katoen, and Christoph Matheja, “Probabilistic Program Verification via Inductive Synthesis of Inductive Invariants,” in <i>TACAS</i>, 2023.</span>
+
+<br />
+	
+
+<a href="http://dx.doi.org/10.1007/978-3-031-30820-8_25" target="_blank">
+	<img alt="DOI: 10.1007/978-3-031-30820-8_25" src="https://img.shields.io/static/v1?label=&amp;message=DOI&amp;color=blue" />
+</a>
+
+
+
+
+
+<a href="https://github.com/moves-rwth/cegispro2" target="_blank">
+	<img alt="repo" src="https://img.shields.io/static/v1?label=&amp;message=repo&amp;color=F1BD33" />        
+</a>
+
+</li>
 <li><span id="unpublished:rubicon">Steven Holtzen, Sebastian Junges, Marcell Vazquez-Chanlatte, Todd Millstein, Sanjit A. Seshia, and Guy Van den Broeck, “Model Checking Finite-Horizon Markov Chains with Probabilistic Inference,” in <i>CAV</i>, 2021.</span>
 
 <br />
@@ -449,7 +481,6 @@ Storm has a superior performance, as shown on the QCOMP 2019 and QCOMP 2020, and
 
 
 </li></ol>
-
 
   </div>
 </div>

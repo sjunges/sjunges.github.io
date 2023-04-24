@@ -262,6 +262,7 @@
   <li><a href="#courses" id="markdown-toc-courses">Courses</a></li>
   <li><a href="#bachelor-and-master-projects" id="markdown-toc-bachelor-and-master-projects">Bachelor and Master projects</a>    <ul>
       <li><a href="#direction-algorithms-for-efficient-mdp-model-checking" id="markdown-toc-direction-algorithms-for-efficient-mdp-model-checking">Direction: Algorithms for Efficient MDP Model Checking</a></li>
+      <li><a href="#direction-automated-reasoning-for-planning" id="markdown-toc-direction-automated-reasoning-for-planning">Direction: Automated reasoning for planning</a></li>
       <li><a href="#direction-a-framework-for-runtime-monitoring-with-imprecise-sensors" id="markdown-toc-direction-a-framework-for-runtime-monitoring-with-imprecise-sensors">Direction: A Framework For Runtime Monitoring with Imprecise Sensors</a></li>
       <li><a href="#direction-learning-to-remember-just-a-little-bit-in-sequential-decision-making" id="markdown-toc-direction-learning-to-remember-just-a-little-bit-in-sequential-decision-making">Direction: Learning to remember just a little bit in sequential decision making</a></li>
       <li><a href="#direction-syntax-guided-synthesis-of-controllers" id="markdown-toc-direction-syntax-guided-synthesis-of-controllers">Direction: Syntax-Guided Synthesis of Controllers</a></li>
@@ -271,7 +272,7 @@
         </ul>
       </li>
       <li><a href="#previously-supervised" id="markdown-toc-previously-supervised">Previously supervised</a>        <ul>
-          <li><a href="#since-2022" id="markdown-toc-since-2022">Since 2022</a></li>
+          <li><a href="#since-2022-all-radboud-unless-noted-otherwise" id="markdown-toc-since-2022-all-radboud-unless-noted-otherwise">Since 2022 (All Radboud, unless noted otherwise)</a></li>
           <li><a href="#2015-2020" id="markdown-toc-2015-2020">(2015-2020)</a></li>
         </ul>
       </li>
@@ -293,8 +294,8 @@ Please also see my <a href="../research">research interests</a> for some potenti
 <p>Most of the topics I supervise are accompanied by creating new implementations of existing or new algorithms and thus require some programming expertise, preferably in C++ or Python. However, for many topics, a willingness to learn during the project suffices. I also offer purely theoretical topics, in particular, I am interested in modelling formalisms (semantics) and complexity results for the topics mentioned above.</p>
 
 <h3 id="direction-algorithms-for-efficient-mdp-model-checking">Direction: Algorithms for Efficient MDP Model Checking</h3>
-<p>Markov decision processes are the model to describe sequential processes with stochastic uncertainty, e.g., to describe models with components that may fail. 
-The probabilistic model checker Storm is a state-of-the-art model checker. 
+<p>Markov decision processes are the model to describe sequential processes with stochastic uncertainty, e.g., to describe models with components that may fail.
+The probabilistic model checker Storm is a state-of-the-art model checker.
 In this direction, we implement and improve approaches from the literature to accelerate state-of-the-art model checking. In particular, we look at typical structures in MDPs and developed targeted algorithms.</p>
 
 <p>Examples include model checking algorithms that compute the probability to reach a target state before a battery is depleted, algorithms that analyze systems with faulty sensors, and others.</p>
@@ -303,6 +304,16 @@ In this direction, we implement and improve approaches from the literature to ac
 <ul>
   <li>You should like to implement algorithms, preferably in C++ or Python.</li>
   <li>You should like to work as part of a larger team of developers of Storm.</li>
+</ul>
+
+<h3 id="direction-automated-reasoning-for-planning">Direction: Automated reasoning for planning</h3>
+<p>As we discuss in the lecture on automated reasoning, many planning problems can be considered using SMT solvers.
+In this research direction, I am happy to investigate the efficient integration of automated reasoning engines, and SMT solvers in particular, to solve planning problems, either on very large graphs, or planning problems that are accompanied by some combinatorial constraints.</p>
+
+<p>In this direction:</p>
+<ul>
+  <li>You should like to create encodings using SMT solvers</li>
+  <li>Most projects will be hands-on, but they can include complexity-theoretic problems.</li>
 </ul>
 
 <h3 id="direction-a-framework-for-runtime-monitoring-with-imprecise-sensors">Direction: A Framework For Runtime Monitoring with Imprecise Sensors</h3>
@@ -317,7 +328,7 @@ In this direction, we implement and improve approaches from the literature to ac
 </ul>
 
 <h3 id="direction-learning-to-remember-just-a-little-bit-in-sequential-decision-making">Direction: Learning to remember just a little bit in sequential decision making</h3>
-<p>Sequential decision making in settings where the decision making agent only has partial information means that the agent has to remember previous observations. 
+<p>Sequential decision making in settings where the decision making agent only has partial information means that the agent has to remember previous observations.
 A simple example is a traffic light in which remembering how long ago it switched from green to yellow helps you to decide whether you should break or continue driving. In this project, we aim to learn better small memory controllers.</p>
 
 <p>In this direction,</p>
@@ -326,12 +337,12 @@ A simple example is a traffic light in which remembering how long ago it switche
   <li>You should like to combine approaches from AI and model checking.</li>
 </ul>
 
-<p>(Many projects in this direction will be jointly supervised with Dr. Nils Jansen)</p>
+<p>(Many projects in this direction will be jointly supervised with Nils Jansen)</p>
 
 <h3 id="direction-syntax-guided-synthesis-of-controllers">Direction: Syntax-Guided Synthesis of Controllers</h3>
-<p>General synthesis of controllers is a hard problem. 
-Syntax-guided synthesis promotes the idea that a user can construct a template with a partial controller, and that we algorithmically find the best controller that matches the template. 
-We investigate syntax-guided synthesis for controllers in stochastic environments. 
+<p>General synthesis of controllers is a hard problem.
+Syntax-guided synthesis promotes the idea that a user can construct a template with a partial controller, and that we algorithmically find the best controller that matches the template.
+We investigate syntax-guided synthesis for controllers in stochastic environments.
 The challenge is that in these environments actions have different outcomes and counterexamples are no longer simple path properties.</p>
 
 <p>In this direction:</p>
@@ -343,8 +354,8 @@ The challenge is that in these environments actions have different outcomes and 
 <h3 id="specific-topics">Specific topics</h3>
 
 <h4 id="topic-state-estimation-for-fault-trees">Topic: State Estimation for Fault Trees</h4>
-<p>Systems eventually fail as components break. We can avoid such failures by retiring (and repairing) systems ahead of time. An important prerequisite is to understand the system state. 
-In this topic, we will consider new methods to analyse systems that are described by fault trees, and try to understand how likely a system is to fail .</p>
+<p>Systems eventually fail as components break. We can avoid such failures by retiring (and repairing) systems ahead of time. An important prerequisite is to understand the system state.
+In this topic, we will consider new methods to analyse systems that are described by fault trees, and try to understand how likely a system is to fail.</p>
 
 <p>For this, we consider new modelling formalisms from the literature and develop theory matching the problem statement. From there onwards, we can define algorithms to solve the problem.</p>
 
@@ -355,7 +366,7 @@ In this topic, we will consider new methods to analyse systems that are describe
 </ul>
 
 <h4 id="topic-a-jani-interface-to-probabilistic-inference">Topic: A JANI Interface to Probabilistic Inference</h4>
-<p>JANI models are a de-facto standard for the description of probabilistic systems. They are used to describe Markov chains on a symbolic level. 
+<p>JANI models are a de-facto standard for the description of probabilistic systems. They are used to describe Markov chains on a symbolic level.
 Dice is a probabilistic inference tool that can compute posterior distributions from probabilistic programs.</p>
 
 <p>In previous work, we have shown that model checking Markov chains via Dice is an interesting and promising method. We aim to improve this method and make it applicable to a larger class of models.  The primary challenge in this topic is to construct a transpiler that takes a JANI model and outputs an equivalent DICE probabilistic program. A prototype for translating PRISM programs to DICE provides some guidance.</p>
@@ -367,15 +378,20 @@ Dice is a probabilistic inference tool that can compute posterior distributions 
 </ul>
 
 <h3 id="previously-supervised">Previously supervised</h3>
-<h4 id="since-2022">Since 2022</h4>
+<p>Below, I give a roughly (reverse) chronological order of supervised students.</p>
+
+<h4 id="since-2022-all-radboud-unless-noted-otherwise">Since 2022 (All Radboud, unless noted otherwise)</h4>
 <ul>
+  <li>Maris Galesloot, MCTS for multi-agent POMDPs (ELLIS Fellow) &#8211; together with Nils Jansen</li>
+  <li>Wietze Koops, Efficient Multi-Agent A* (ELLIS Fellow) &#8211; together with Nils Jansen</li>
+  <li>Kevin van de Glind, Control improvisation with infinite horizons (Bsc)</li>
   <li>Stefan Boneschanscher, Feature-based Random Constraints in Control Improvisation (Bsc)</li>
   <li>Iwan Litjens, an MCTS-based AI playing The Crew (Bsc)</li>
 </ul>
 
 <h4 id="2015-2020">(2015-2020)</h4>
 <ul>
-  <li>Marnix Suilen, Multi-environment MDPs &#8211; with Nils Jansen</li>
+  <li>Marnix Suilen, Multi-environment MDPs (MSc, Radboud University)&#8211; with Nils Jansen</li>
   <li>Kevin Batz, Probabilistic IC3 (MSc, RWTH) &#8211; together with Benjamin Kaminski and Christoph Matheja</li>
   <li>Dustin Jungen, SAT-Based Methods for Solving POMDP problems (MSc, RWTH)</li>
   <li>Jip Spel, Monotonicity in Markov Chains (MSc, University of Twente)</li>
@@ -387,7 +403,6 @@ Dice is a probabilistic inference tool that can compute posterior distributions 
   <li>Tim Quatmann, Multi-Objective Model Checking for Markov Automata (MSc, RWTH)</li>
   <li>Tom Janson, Accelerated Model Repair using Heuristic Analysis of Subsystems (BSc, RWTH)</li>
 </ul>
-
 
   </div>
 </div>

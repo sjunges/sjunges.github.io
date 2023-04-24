@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2023-04-14T07:44:09-07:00">
+  <meta property="article:published_time" content="2023-04-24T05:14:18-07:00">
 
 
 
@@ -179,8 +179,6 @@
 
 
 
-
-
 <div id="main" role="main">
   
 
@@ -260,40 +258,22 @@
   </div>
 
 
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Syntax-Guided Synthesis in Probabilistic Programs">
-    <meta itemprop="description" content="As a variant to the parameter synthesis, we consider probabilistic programs with holes, where the right expression for the holes have to be synthesised.A technical difference to parameter synthesis is that we consider finite sets of programs with often different control flow diagrams.">
-    <meta itemprop="datePublished" content="April 14, 2023">
+  <div class="archive">
     
-
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 class="page__title" itemprop="headline">Syntax-Guided Synthesis in Probabilistic Programs
-</h1>
-          
-        
-        
-        
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-04-14T07:44:09-07:00">April 14, 2023</time></p>
-        
-        
-             
-        
+      <h1 class="page__title">Syntax-Guided Synthesis in Probabilistic Programs</h1>
     
-        </header>
-      
-
-      <section class="page__content" itemprop="text">
-        <p>As a variant to the <a href="parameters">parameter synthesis</a>, we consider probabilistic programs with holes, where the right expression for the holes have to be synthesised.
+    <p>As a variant to the <a href="parameters">parameter synthesis</a>, we consider probabilistic programs with holes, where the right expression for the holes have to be synthesised.
 A technical difference to parameter synthesis is that we consider finite sets of programs with often different control flow diagrams.</p>
 
 <h2 id="algorithms">Algorithms</h2>
-<p>We developed algorithms based on counterexample-guided inductive synthesis <a class="citation" href="#DBLP:conf/fm/CeskaHJK19">[1], [2]</a> and abstraction-refinement <a class="citation" href="#DBLP:conf/tacas/CeskaJJK19">[3]</a>, see also <a class="citation" href="#DBLP:conf/birthday/CeskaD0JK19">[4]</a> for a high-level overview. 
+<p>We developed algorithms based on counterexample-guided inductive synthesis <a class="citation" href="#DBLP:conf/fm/CeskaHJK19">[1], [2]</a> and abstraction-refinement <a class="citation" href="#DBLP:conf/tacas/CeskaJJK19">[3]</a>, see also <a class="citation" href="#DBLP:conf/birthday/CeskaD0JK19">[4]</a> for a high-level overview.
 Both approaches can be efficiently combined using a method described in <a class="citation" href="#DBLP:conf/tacas/Andriushchenko021">[5]</a>.</p>
 
+<h2 id="application-to-pomdp-controller-synthesis">Application to POMDP controller synthesis</h2>
+<p>The synthesis algorithms are applicable to controller synthesis in <a href="pomdps">POMDPs</a> <a class="citation" href="#unpublished:payntforpomdps">[6], [7]</a>.</p>
+
 <h2 id="tool-support">Tool support</h2>
-<p>The algorithms above have all been implemented in <a href="https://github.com/gargantophob/synthesis">PAYNT</a> <a class="citation" href="#unpublished:paynt">[6]</a>.</p>
+<p>The algorithms above have all been implemented in <a href="https://github.com/gargantophob/synthesis">PAYNT</a> <a class="citation" href="#unpublished:paynt">[8]</a>.</p>
 
 <h2 id="references">References</h2>
 
@@ -384,6 +364,44 @@ Both approaches can be efficiently combined using a method described in <a class
 
 
 </li>
+<li><span id="unpublished:payntforpomdps">Roman Andriushchenko, Milan Češka, Sebastian Junges, and Joost-Pieter Katoen, “Inductive Synthesis of Finite-State Controllers for POMDPs,” in <i>UAI</i>, 2022.</span>
+
+<br />
+	
+
+<a href="https://proceedings.mlr.press/v180/andriushchenko22a.html" target="_blank">
+	<img alt="URL: https://proceedings.mlr.press/v180/andriushchenko22a.html" src="https://img.shields.io/static/v1?label=&amp;message=URL&amp;color=blueviolet" />
+</a>
+
+
+<a href="https://arxiv.org/abs/2203.10803" target="_blank">
+	<img alt="arXiv: 2203.10803" src="https://img.shields.io/static/v1?label=&amp;message=arXiv&amp;color=A42C25" />
+</a>
+
+
+<a href="https://doi.org/10.5281/zenodo.6637489" target="_blank">
+	<img alt="supplemental material" src="https://img.shields.io/static/v1?label=&amp;message=material&amp;color=889900" />
+</a>
+
+
+
+<a href="https://github.com/randriu/synthesis" target="_blank">
+	<img alt="repo" src="https://img.shields.io/static/v1?label=&amp;message=repo&amp;color=F1BD33" />        
+</a>
+
+</li>
+<li><span id="unpublished:saynt">Roman Andriushchenko, Alexander Bork, Milan Ceska, Sebastian Junges, Joost-Pieter Katoen, and Filip Macak, “Search and Explore: Symbiotic Policy Synthesis in POMDPs,” in <i>CAV</i>, 2023.</span>
+
+(to appear)
+
+<br />
+	
+
+
+
+
+
+</li>
 <li><span id="unpublished:paynt">Roman Andriushchenko, Milan Češka, Sebastian Junges, Joost-Pieter Katoen, and Simon Stupinsky, “PAYNT: A Tool for Inductive Synthesis of Probabilistic Programs,” in <i>CAV</i>, 2021.</span>
 
 <br />
@@ -407,40 +425,7 @@ Both approaches can be efficiently combined using a method described in <a class
 
 </li></ol>
 
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-
-
-
-
-      </footer>
-
-      
-
-      
-
-
-  <nav class="pagination">
-    
-      <a href="https://sjunges.github.io/research/runtime" class="pagination--pager" title="Runtime Assurance and Enforcement
-">Previous</a>
-    
-    
-      <a href="#" class="pagination--pager disabled">Next</a>
-    
-  </nav>
-
-    </div>
-
-    
-  </article>
-
-  
-  
+  </div>
 </div>
 
 
