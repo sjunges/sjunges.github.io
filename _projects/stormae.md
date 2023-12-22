@@ -1,7 +1,7 @@
 ---
 title: "StormAE: The Probabilistic Model Checker Storm for Almost Everyone (NWO OSF)"
 collection: projects
-permalink: /projects/promise
+permalink: /projects/stormae
 layout: archive
 order: 30
 ---
