@@ -5,6 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
+### 2024
+
+{% bibliography --query @*[year=2024]  %}
+
 ### 2023
 
 {% bibliography --query @*[year=2023]  %}
@@ -25,7 +29,7 @@ author_profile: true
 
 {% bibliography --query @*[year=2019] %}
 
-### 2018 
+### 2018
 
 {% bibliography --query @*[year=2018] %}
 
@@ -52,5 +56,3 @@ author_profile: true
 ### 2012
 
 {% bibliography --query @*[year=2012] %}
-
-

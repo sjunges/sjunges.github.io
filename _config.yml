@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Sebastian Junges"
 title_separator          : "-"
 name                     : &name "Sebastian Junges"
-description              : &description "Postdoctoral Researcher"
+description              : &description "Assistant Professor"
 url                      : https://sjunges.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sjunges.github.io"
@@ -181,6 +181,9 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
   research:
     output: true
     permalink: /:collection/:path/
@@ -209,6 +212,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
   # _pages
   - scope:
       path: ""
@@ -223,8 +233,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -315,11 +323,8 @@ compress_html:
   ignore:
     envs: development
 
-scholar: 
+scholar:
   bibliography_template: bib
-  style: _bibliography/ieee.csl 
+  style: _bibliography/ieee.csl
   locale: en
   bibliography_group_tag: b
-
-
-
