@@ -19,7 +19,7 @@
 
 
 
-<title>Fault Trees and Reliability Engineering - Sebastian Junges</title>
+<title>StormAE: The Probabilistic Model Checker Storm for Almost Everyone (NWO OSF) - Sebastian Junges</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="Sebastian Junges">
-<meta property="og:title" content="Fault Trees and Reliability Engineering">
+<meta property="og:title" content="StormAE: The Probabilistic Model Checker Storm for Almost Everyone (NWO OSF)">
 
 
-  <link rel="canonical" href="https://sjunges.github.io/research/fault-trees">
-  <meta property="og:url" content="https://sjunges.github.io/research/fault-trees">
+  <link rel="canonical" href="https://sjunges.github.io/projects/promise">
+  <meta property="og:url" content="https://sjunges.github.io/projects/promise">
 
 
 
-  <meta property="og:description" content="Fault trees are a prominent model in reliability engineering. They help express the occurence of a top-level failure in terms of faults in the system.We have studied the quantitative analysis of Fault Trees, in particular of an extension of Fault Trees called Dynamic Fault Trees.Dynamic Fault Trees allow for complex and order-dependent combinations of faults to be expressed capturing e.g. different failure rates of unused spare components">
+  <meta property="og:description" content="In this project, we aim to improve the usability of our open source model checker Storm.">
 
 
 
@@ -263,92 +263,21 @@
 
   <div class="archive">
     
-      <h1 class="page__title">Fault Trees and Reliability Engineering</h1>
+      <h1 class="page__title">StormAE: The Probabilistic Model Checker Storm for Almost Everyone (NWO OSF)</h1>
     
-    <p>Fault trees are a prominent model in reliability engineering. They help express the occurence of a top-level failure in terms of faults in the system.
-We have studied the quantitative analysis of Fault Trees, in particular of an extension of Fault Trees called Dynamic Fault Trees.
-Dynamic Fault Trees allow for complex and order-dependent combinations of faults to be expressed capturing e.g. different failure rates of unused spare components</p>
+    <p>In this project, we aim to improve the usability of our open source model checker Storm.</p>
 
-<h2 id="semantics">Semantics</h2>
+<h2 id="summary-for-the-general-public">Summary for the general public</h2>
 
-<p>The semantics of DFTs are rather intricate as they are formed by independently developed elements with local semantics. Often, their interplay yields subtle quircks.
-<a class="citation" href="#DBLP:conf/dsn/JungesGKS16">[1]</a>. We think that the best way to explain DFT semantics is using Petri nets. The semantic framework we developed supersedes various existing  semantics given to fault trees by varying some parameters of the semantics <a class="citation" href="#DBLP:conf/apn/JungesKS018">[2]</a></p>
+<p>Probabilistic model checking is a popular technique to analyse models that describe systems subject to uncertainty. The open-source tool Storm is a competitive, widely applied model checker, which was originally designed for model checking experts. Due to its success, the type of users and the typical use cases have broadened, however, this is not yet reflected in the interfaces or documentation that Storm provides. StormAE aims to improve in these two areas to ensure that more researchers can rely on the latest algorithms in Storm, compare them to new methods, and apply them in the wider scientific field.</p>
 
-<h2 id="analysis">Analysis</h2>
-
-<p>We improved the state-of-the-art in the quantitative analysis of Dynamic Fault Trees using techniques from probabilistic <a href="modelchecking">model checking</a>
-<a class="citation" href="#DBLP:journals/tii/VolkJK18">[3]</a>.
-Earlier, we already showed that a model transformation on these fault trees allows for speed ups of one or more orders of magnitude <a class="citation" href="#DBLP:journals/fac/JungesGKRS17">[4]</a>.</p>
-
-<h2 id="case-study">Case study</h2>
-
-<p>Besides applying the results above to benchmarks from the literature, we used our tools to analyse various dependability metrics for the core EE part of a vehicle guidance system <a class="citation" href="#DBLP:journals/ress/GhadhabJKKV19">[5]</a>.</p>
+<h2 id="funding-information">Funding Information</h2>
+<p>The project is funded by an NWO Open Science Fund.
+The funding amounts to 50k over 1 years (2024-2025).</p>
 
 <h2 id="references">References</h2>
 
-<ol class="bibliography"><li><span id="DBLP:conf/dsn/JungesGKS16">Sebastian Junges, Dennis Guck, Joost-Pieter Katoen, and Mariëlle Stoelinga, “Uncovering Dynamic Fault Trees,” in <i>DSN</i>, 2016.</span>
-
-<br />
-	
-
-
-
-
-
-</li>
-<li><span id="DBLP:conf/apn/JungesKS018">Sebastian Junges, Joost-Pieter Katoen, Mariëlle Stoelinga, and Matthias Volk, “One Net Fits All - A Unifying Semantics of Dynamic Fault Trees Using
-               GSPNs,” in <i>Petri Nets</i>, 2018.</span>
-
-<br />
-	
-
-
-
-
-
-</li>
-<li><span id="DBLP:journals/tii/VolkJK18">Matthias Volk, Sebastian Junges, and Joost-Pieter Katoen, “Fast Dynamic Fault Tree Analysis by Model Checking Techniques,” <i>IEEE Trans. Industrial Informatics</i>, no. 1, 2018.</span>
-
-<br />
-	
-
-
-
-
-
-</li>
-<li><span id="DBLP:journals/fac/JungesGKRS17">Sebastian Junges, Dennis Guck, Joost-Pieter Katoen, Arend Rensink, and Mariëlle Stoelinga, “Fault trees on a diet: automated reduction by graph rewriting,” <i>Formal Asp. Comput.</i>, no. 4, 2017.</span>
-
-<br />
-	
-
-
-
-
-
-</li>
-<li><span id="DBLP:journals/ress/GhadhabJKKV19">Majdi Ghadhab, Sebastian Junges, Joost-Pieter Katoen, Matthias Kuntz, and Matthias Volk, “Safety analysis for vehicle guidance systems with dynamic fault trees,” <i>Rel. Eng. and Sys. Safety</i>, 2019.</span>
-
-<br />
-	
-
-<a href="http://dx.doi.org/10.1016/j.ress.2019.02.005" target="_blank">
-	<img alt="DOI: 10.1016/j.ress.2019.02.005" src="https://img.shields.io/static/v1?label=&amp;message=DOI&amp;color=blue" />
-</a>
-
-
-<a href="https://arxiv.org/abs/1903.05361" target="_blank">
-	<img alt="arXiv: 1903.05361" src="https://img.shields.io/static/v1?label=&amp;message=arXiv&amp;color=A42C25" />
-</a>
-
-
-
-<a href="https://www.stormchecker.org/publications/dfts-for-vehicle-guidance-systems" target="_blank">
-	<img alt="further information" src="https://img.shields.io/static/v1?label=&amp;message=website&amp;color=009999" />
-</a>
-
-
-</li></ol>
+<ol class="bibliography"></ol>
 
   </div>
 </div>
