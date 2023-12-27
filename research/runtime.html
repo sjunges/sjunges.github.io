@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2023-12-22T12:05:51-08:00">
+  <meta property="article:published_time" content="2023-12-27T11:56:51-08:00">
 
 
 
@@ -274,9 +274,9 @@ This is where runtime verification comes into play.</p>
 <p>Runtime monitoring in cyber-physical systems aims to identify potentially dangerous situations. Examples where runtime monitors are helpful include broken sensors or actuators, environment conditions outside the operational domain, and software errors.
 Typically, monitors are used in combination  in scenarios where it the safety concern can be resolved by some predefined measure (e.g., stopping the car). The typical challenge is that we cannot observe the precise state of the system.</p>
 
-<p>In <a class="citation" href="#unpublished:runtimemdps">[1]</a>, we consider model-based monitoring. The model combines partial observability, probabilistic and nondeterministic behavior. We show that the standard filtering approaches used for probabilistic or nondeterministic behavior do not scale when nondeterminism and probabilities are combined in a model, but that central decision problems in runtime monitoring remain tractable.</p>
+<p>We consider model-based monitoring.  In <a class="citation" href="#unpublished:runtimemdps">[1]</a>, the model combines partial observability, probabilistic and nondeterministic behavior. We show that the standard filtering approaches used for probabilistic or nondeterministic behavior do not scale when nondeterminism and probabilities are combined in a model, but that central decision problems in runtime monitoring remain tractable. In <a class="citation" href="#unpublished:ctmcmonitoring">[2]</a>, we consider continuous-time models and observations that have imprecise time stamps.</p>
 
-<p>In <a class="citation" href="#unpublished:rvtutorial">[2], [3]</a>, we consider black-box monitoring in the context of autonomous systems.</p>
+<p>In <a class="citation" href="#unpublished:rvtutorial">[3], [4]</a>, we consider black-box monitoring in the context of autonomous systems.</p>
 
 <h2 id="runtime-enforcement">Runtime Enforcement</h2>
 
@@ -285,9 +285,9 @@ A typical setup for runtime enforcement is shielding via permissive schedulers:
 Given an observed trace through the system, what actions can we allow such that we can guarantee to satisfy some specification.
 Typically, we are interested in being minimally invasive. Thus, we want to allow as much as possible.</p>
 
-<p>In <a class="citation" href="#DBLP:conf/tacas/Junges0DTK16">[4]</a>, we rigorously applied such a setup for fully observable MDPs with quantitative formal risk specifications.
-We relaxed some assumptions to improve scalability in <a class="citation" href="#DBLP:conf/concur/0001KJSB20">[5]</a>.
-More recently,  <a class="citation" href="#unpublished:enforcingpomdps">[6]</a> considers qualitative (almost-sure) reachability specifications in a partially observable MDP. This is used to shield state-of-the-art RL algorithms in <a class="citation" href="#unpublished:pomdpshieldrl">[7]</a></p>
+<p>In <a class="citation" href="#DBLP:conf/tacas/Junges0DTK16">[5]</a>, we rigorously applied such a setup for fully observable MDPs with quantitative formal risk specifications.
+We relaxed some assumptions to improve scalability in <a class="citation" href="#DBLP:conf/concur/0001KJSB20">[6]</a>.
+More recently,  <a class="citation" href="#unpublished:enforcingpomdps">[7]</a> considers qualitative (almost-sure) reachability specifications in a partially observable MDP. This is used to shield state-of-the-art RL algorithms in <a class="citation" href="#unpublished:pomdpshieldrl">[8]</a></p>
 
 <h2 id="safe-reinforcement-learning">Safe Reinforcement Learning</h2>
 
@@ -315,6 +315,18 @@ More recently,  <a class="citation" href="#unpublished:enforcingpomdps">[6]</a> 
 <a href="https://github.com/monitoring-MDPs/premise" target="_blank">
 	<img alt="repo" src="https://img.shields.io/static/v1?label=&amp;message=repo&amp;color=F1BD33" />        
 </a>
+
+</li>
+<li><span id="unpublished:ctmcmonitoring">Thom Badings, Matthias Volk, Sebastian Junges, Marielle Stoelinga, and Nils Jansen, “CTMCs with Imprecisely Timed Observations,” in <i>TACAS</i>, 2024.</span>
+
+(to appear)
+
+<br />
+	
+
+
+
+
 
 </li>
 <li><span id="unpublished:rvtutorial">Hazem Torfah, Sebastian Junges, Daniel Fremont, and Sanjit A. Seshia, “Formal Analysis of AI-Based Autonomy: From Modeling to Runtime Assurance,” in <i>RV</i>, 2021.</span>

@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2023-12-22T12:05:51-08:00">
+  <meta property="article:published_time" content="2023-12-27T11:56:51-08:00">
 
 
 
@@ -271,21 +271,24 @@ We have considered both verification and controller synthesis approaches to thei
 <h2 id="finite-state-controller-synthesis">Finite State Controller Synthesis</h2>
 <p>Finite State Controllers for POMDPs can be computed via parameter synthesis methods for <a href="parametric">parametric Markov chains</a> <a class="citation" href="#DBLP:conf/uai/Junges0WQWK018">[1]</a>.
 These approaches do generalize to uncertain POMDPs <a class="citation" href="#unpublished:robustaaai">[2]</a>, where we showed that we can synthesise robust finite state controllers for POMDPs.
-We use similar ideas in our work on <a href="synt">sketching</a>.</p>
+We use similar ideas in our work on <a href="synt">sketching</a>.
+To further accelerate finding suitable controllers, it can be helpful to embed a belief-based approach with controller synthesis approaches <a class="citation" href="#unpublished:saynt">[3]</a>.</p>
 
-<p>We also succesfully applied game-based abstractions to synthesise controllers in a POMDP setting, see <a class="citation" href="#DBLP:conf/cdc/WintererJW0TK017">[3], [4]</a>.</p>
-
-<p>Finally, we support policy synthesis for a fixed almost-sure reachability property in <a class="citation" href="#unpublished:enforcingpomdps">[5]</a> via an iterative SAT-computation. We applied the obtained policies in the context of <a href="runtime">runtime enforcement</a>.</p>
+<p>We also succesfully applied game-based abstractions to synthesise controllers in a POMDP setting, see <a class="citation" href="#DBLP:conf/cdc/WintererJW0TK017">[4], [5]</a>.</p>
 
 <h2 id="quantitative-verification">Quantitative Verification</h2>
 <p>To support reasoning about the absence of a controller satisfying a specification, we need to investigate the underlying infinitely large belief MDP.
 To make such an analysis feasible, we combine state-of-the-art probabilistic model checking together with an abstraction-refinement loop <a class="citation" href="#DBLP:conf/atva/BorkJKQ20">[6]</a>.
 The approach is part of Storm.</p>
 
-<p>To further accelerate finding suitable controllers, it can be helpful to embed a belief-based approach with controller synthesis approaches as discussed above <a class="citation" href="#unpublished:saynt">[7]</a>.</p>
+<h2 id="qualitative-verification">Qualitative Verification</h2>
+<p>Finally, we support policy synthesis for a fixed almost-sure reachability property in <a class="citation" href="#unpublished:enforcingpomdps">[7]</a> via an iterative SAT-computation. We applied the obtained policies in the context of <a href="runtime">runtime enforcement</a>.</p>
+
+<h2 id="online-planning">Online Planning</h2>
+<p>Due to the computational complexity, a succesful approach is based on variations of Monte-Carlo Tree Search (MCTS). In <a class="citation" href="#unpublished:multiagentplanning">[8]</a>, we consider such algorithms in the context of many-agent POMDPs, where the challenge is that the number of actions is typically (very) large.</p>
 
 <h2 id="decentralized-models">Decentralized Models</h2>
-<p>We investigated an extension to decentralized controllers for finite horizons in <a class="citation" href="#unpublished:rsmaastar">[8]</a>.</p>
+<p>We investigated an extension to decentralized controllers for finite horizons in <a class="citation" href="#unpublished:rsmaastar">[9]</a>.</p>
 
 <h2 id="benchmarks">Benchmarks</h2>
 <p>Among others, we have a series of gridworld benchmarks that can be used with storm and offer visualisations. See <a href="https://github.com/sjunges/gridworld-by-storm/blob/master/README.md">gridworlds</a> for more information.</p>
@@ -320,6 +323,28 @@ The approach is part of Storm.</p>
 
 
 </li>
+<li><span id="unpublished:saynt">Roman Andriushchenko, Alexander Bork, Milan Ceska, Sebastian Junges, Joost-Pieter Katoen, and Filip Macak, “Search and Explore: Symbiotic Policy Synthesis in POMDPs,” in <i>CAV</i>, 2023.</span>
+
+<br />
+	
+
+<a href="http://dx.doi.org/10.1007/978-3-031-37709-9_6" target="_blank">
+	<img alt="DOI: 10.1007/978-3-031-37709-9_6" src="https://img.shields.io/static/v1?label=&amp;message=DOI&amp;color=blue" />
+</a>
+
+
+<a href="https://arxiv.org/abs/2305.1414" target="_blank">
+	<img alt="arXiv: 2305.1414" src="https://img.shields.io/static/v1?label=&amp;message=arXiv&amp;color=A42C25" />
+</a>
+
+
+<a href="https://doi.org/10.5281/zenodo.7874513" target="_blank">
+	<img alt="supplemental material" src="https://img.shields.io/static/v1?label=&amp;message=material&amp;color=889900" />
+</a>
+
+
+
+</li>
 <li><span id="DBLP:conf/cdc/WintererJW0TK017">Leonore Winterer <i>et al.</i>, “Motion planning under partial observability using game-based abstraction,” in <i>CDC</i>, 2017.</span>
 
 <br />
@@ -340,28 +365,6 @@ The approach is part of Storm.</p>
 </a>
 
 
-
-
-
-</li>
-<li><span id="unpublished:enforcingpomdps">Sebastian Junges, Nils Jansen, and Sanjit A. Seshia, “Enforcing Almost-Sure Reachability in POMDPs,” in <i>CAV</i>, 2021.</span>
-
-<br />
-	
-
-<a href="http://dx.doi.org/10.1007/978-3-030-81688-9_28" target="_blank">
-	<img alt="DOI: 10.1007/978-3-030-81688-9_28" src="https://img.shields.io/static/v1?label=&amp;message=DOI&amp;color=blue" />
-</a>
-
-
-<a href="https://arxiv.org/abs/2007.00085" target="_blank">
-	<img alt="arXiv: 2007.00085" src="https://img.shields.io/static/v1?label=&amp;message=arXiv&amp;color=A42C25" />
-</a>
-
-
-<a href="https://zenodo.org/record/4784940#.YUo4JS0RqgQ" target="_blank">
-	<img alt="supplemental material" src="https://img.shields.io/static/v1?label=&amp;message=material&amp;color=889900" />
-</a>
 
 
 
@@ -388,22 +391,42 @@ The approach is part of Storm.</p>
 
 
 </li>
-<li><span id="unpublished:saynt">Roman Andriushchenko, Alexander Bork, Milan Ceska, Sebastian Junges, Joost-Pieter Katoen, and Filip Macak, “Search and Explore: Symbiotic Policy Synthesis in POMDPs,” in <i>CAV</i>, 2023.</span>
+<li><span id="unpublished:enforcingpomdps">Sebastian Junges, Nils Jansen, and Sanjit A. Seshia, “Enforcing Almost-Sure Reachability in POMDPs,” in <i>CAV</i>, 2021.</span>
 
 <br />
 	
 
-<a href="http://dx.doi.org/10.1007/978-3-031-37709-9_6" target="_blank">
-	<img alt="DOI: 10.1007/978-3-031-37709-9_6" src="https://img.shields.io/static/v1?label=&amp;message=DOI&amp;color=blue" />
+<a href="http://dx.doi.org/10.1007/978-3-030-81688-9_28" target="_blank">
+	<img alt="DOI: 10.1007/978-3-030-81688-9_28" src="https://img.shields.io/static/v1?label=&amp;message=DOI&amp;color=blue" />
 </a>
 
 
-<a href="https://arxiv.org/abs/2305.1414" target="_blank">
-	<img alt="arXiv: 2305.1414" src="https://img.shields.io/static/v1?label=&amp;message=arXiv&amp;color=A42C25" />
+<a href="https://arxiv.org/abs/2007.00085" target="_blank">
+	<img alt="arXiv: 2007.00085" src="https://img.shields.io/static/v1?label=&amp;message=arXiv&amp;color=A42C25" />
 </a>
 
 
-<a href="https://doi.org/10.5281/zenodo.7874513" target="_blank">
+<a href="https://zenodo.org/record/4784940#.YUo4JS0RqgQ" target="_blank">
+	<img alt="supplemental material" src="https://img.shields.io/static/v1?label=&amp;message=material&amp;color=889900" />
+</a>
+
+
+
+</li>
+<li><span id="unpublished:multiagentplanning">Maris Galesloot, Thiago D. Simao, Sebastian Junges, and Nils Jansen, “Factored Online Planning in Many-Agent POMDPs,” in <i>AAAI</i>, 2024.</span>
+
+(to appear)
+
+<br />
+	
+
+
+<a href="https://arxiv.org/abs/2312.11434" target="_blank">
+	<img alt="arXiv: 2312.11434" src="https://img.shields.io/static/v1?label=&amp;message=arXiv&amp;color=A42C25" />
+</a>
+
+
+<a href="https://doi.org/10.5281/zenodo.10409525" target="_blank">
 	<img alt="supplemental material" src="https://img.shields.io/static/v1?label=&amp;message=material&amp;color=889900" />
 </a>
 
