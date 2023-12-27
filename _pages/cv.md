@@ -81,7 +81,8 @@ Academic Service
 ======
 ### Organization
 - Dagstuhl Seminar 'Scalable Analysis of Probabilistic Models and Programs' 2023
-- VeriProp 2023, 2022, 2021 (co-located with CAV)
+- Dagstuhl Meeting 'Towards A Unified Interface For Modern Probabilistic Model Checking Tools' 2024
+- VeriProp 2024, 2023, 2022, 2021 (all co-located with CAV)
 - SEN Symposium 2023
 - ROCKS 2022 Workshop
 - the 1st and 2nd UnRAVeL Spring Meetings (2018, 2019).
@@ -91,7 +92,7 @@ between 2009 and 2014
 ### PC/AE
 
 #### 2024
-TACAS
+AAAI (safety track), CAV, QEST/FORMATS, TACAS
 
 #### 2023
 AAAI (safety track), CAV, FM, ICTAC, iFM, QEST, SYNT, TiCSA, UAI
