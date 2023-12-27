@@ -14,11 +14,9 @@ Finite State Controller Synthesis
 Finite State Controllers for POMDPs can be computed via parameter synthesis methods for [parametric Markov chains](parametric) {% cite DBLP:conf/uai/Junges0WQWK018  %}.
 These approaches do generalize to uncertain POMDPs {% cite unpublished:robustaaai %}, where we showed that we can synthesise robust finite state controllers for POMDPs.
 We use similar ideas in our work on [sketching](synt).
+To further accelerate finding suitable controllers, it can be helpful to embed a belief-based approach with controller synthesis approaches {% cite unpublished:saynt %}.
 
 We also succesfully applied game-based abstractions to synthesise controllers in a POMDP setting, see {% cite DBLP:conf/cdc/WintererJW0TK017 DBLP:journals/tac/WintererJWJTKB21 %}.
-
-Finally, we support policy synthesis for a fixed almost-sure reachability property in {% cite unpublished:enforcingpomdps %} via an iterative SAT-computation. We applied the obtained policies in the context of [runtime enforcement](runtime).
-
 
 Quantitative Verification
 ---------------------------------
@@ -26,7 +24,14 @@ To support reasoning about the absence of a controller satisfying a specificatio
 To make such an analysis feasible, we combine state-of-the-art probabilistic model checking together with an abstraction-refinement loop {% cite DBLP:conf/atva/BorkJKQ20  %}.
 The approach is part of Storm.
 
-To further accelerate finding suitable controllers, it can be helpful to embed a belief-based approach with controller synthesis approaches as discussed above {% cite unpublished:saynt %}.
+
+Qualitative Verification
+---------------------------------
+Finally, we support policy synthesis for a fixed almost-sure reachability property in {% cite unpublished:enforcingpomdps %} via an iterative SAT-computation. We applied the obtained policies in the context of [runtime enforcement](runtime).
+
+Online Planning
+-------------------------------------
+Due to the computational complexity, a succesful approach is based on variations of Monte-Carlo Tree Search (MCTS). In {% cite unpublished:multiagentplanning %}, we consider such algorithms in the context of many-agent POMDPs, where the challenge is that the number of actions is typically (very) large.
 
 
 Decentralized Models
