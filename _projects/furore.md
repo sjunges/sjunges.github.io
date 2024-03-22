@@ -1,5 +1,5 @@
 ---
-title: "Furore: Fundamentals of Runtime Monitoring (NWO ENW-M)"
+title: "Furore: Fundamentals of Robust Runtime Monitoring (NWO ENW-M)"
 collection: projects
 permalink: /projects/furore
 layout: archive

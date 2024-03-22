@@ -79,20 +79,30 @@ See the list of recent [teaching activities and student projects](../teaching).
 
 Academic Service
 ======
+
+### Committee Work
+- Radboud Science Faculty Diversitee Committee (Staff Diversity, Outreach)
+- ETAPS E.V. (Finance control, HotCRP hosting)
+
+### Membership
+- ELLIS  
+- VERSEN
+
 ### Organization
 - Dagstuhl Seminar 'Scalable Analysis of Probabilistic Models and Programs' 2023
 - Dagstuhl Meeting 'Towards A Unified Interface For Modern Probabilistic Model Checking Tools' 2024
-- VeriProp 2024, 2023, 2022, 2021 (all co-located with CAV)
+- VeriProp Workshop on Verification of Probabilistic Programs (2024, 2023, 2022, 2021, all co-located with CAV)
 - SEN Symposium 2023
 - ROCKS 2022 Workshop
 - the 1st and 2nd UnRAVeL Spring Meetings (2018, 2019).
 - the 'Aachener Informatik Tage', a STEM-outreach event for highschool pupils, several times
 between 2009 and 2014
 
-### PC/AE
+### PC/AE/Editor
 
 #### 2024
-AAAI (safety track), CAV, QEST/FORMATS, TACAS
+AAAI (safety track), ATVA, CAV, CONCUR, KR (seq decision making track), QEST/FORMATS, TACAS
+Guest editor for CAV23 Special Issue
 
 #### 2023
 AAAI (safety track), CAV, FM, ICTAC, iFM, QEST, SYNT, TiCSA, UAI
