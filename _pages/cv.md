@@ -100,8 +100,12 @@ between 2009 and 2014
 
 ### PC/AE/Editor
 
+#### 2025
+TACAS
+
 #### 2024
 AAAI (safety track), ATVA, CAV, CONCUR, KR (seq decision making track), QEST/FORMATS, TACAS
+
 Guest editor for CAV23 Special Issue
 
 #### 2023
