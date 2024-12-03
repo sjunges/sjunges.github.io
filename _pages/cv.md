@@ -87,6 +87,7 @@ Academic Service
 ### Membership
 - ELLIS  
 - VERSEN
+- SigAlg.nl
 
 ### Organization
 - Dagstuhl Seminar 'Scalable Analysis of Probabilistic Models and Programs' 2023
@@ -100,8 +101,11 @@ between 2009 and 2014
 
 ### PC/AE/Editor
 
+#### 2026 
+TACAS (chair)
+
 #### 2025
-TACAS
+CONCUR, RV, TACAS, 
 
 #### 2024
 AAAI (safety track), ATVA, CAV, CONCUR, KR (seq decision making track), QEST/FORMATS, TACAS
