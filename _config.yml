@@ -85,9 +85,9 @@ author:
   bio              : "Computer Scientist developing trustworthy algorithms to evaluate system dependability."
   location         : "Nijmegen, NL"
   employer         : "Radboud University"
-  pubmed           : 
+  pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=anwAmOEAAAAJ"
-  email            : "sjunges-AT-cs.ru.nl"
+  email            : "sebastian.junges@ru.nl"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          :
   vine             :
   weibo            :
   xing             :

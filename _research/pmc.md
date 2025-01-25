@@ -17,9 +17,11 @@ Multi-objective model checking asks whether there is a policy that satisfies mul
 In {% cite unpublished:erci %}, we looked at a combination of reachability probabilities and randomization constraints. Such constraints enforce that the policy randomizes sufficiently, a property useful for testing and obfuscation.
 
 
-Hierarchical models
------------------------
+Hierarchical models and Compositionality
+-------------------------------------------
 We recently started to support hierarchical MDPs, in particular, by presenting an abstraction-refinement loop {% cite %} that uses similarities between different parts of a hierarchical MDP. 
+
+
 
 
 Symbolic model checking
