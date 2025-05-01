@@ -14,7 +14,7 @@ We closely collaborate with other teams within the departement.
 
 PhD students
 --------------------
-* Linus Heck, from 2024/02
+* Linus Heck, since 2024/02
 * [Loes Kruger](https://www.ru.nl/en/people/kruger-l), since 2023/03, co-supervised with [Jurriaan Rot](http://jurriaan.me)
 * Luko van der Maas, since 2024/09
 * [Marck van der Vegt](https://www.ru.nl/en/people/vegt-m-van-der), since 2022/01
@@ -22,11 +22,12 @@ PhD students
 Master Research Interns & Master Thesis Students
 ---------------------------------
 * Kevin van de Glind (via ELLIS)
-* Johan Sijtsma
+* Gerbrich Kroon
+* Thomas Maassen
 
 Guests
 -------------------
-* currently none
+* Florian Wittbold (05/2025 to 06/2025)
 
 Want to visit? Send us an email!
 
@@ -36,6 +37,7 @@ Former Master Research Interns & Master Thesis Students
 * Maris Galesloot (via ELLIS, with [Nils Jansen](https://nilsjansen.org)), 2023
 * Wietze Koops (via ELLIS, with [Nils Jansen](https://nilsjansen.org)), 2023-2024
 * Astrid van der Jagt (external) 2024
+* Johan Sijtsma, 2024
 
 
 Former Guests (> 1 month)
