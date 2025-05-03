@@ -38,13 +38,18 @@ Talks (Since 2020)
 ======
 (Conference presentations associated with a paper are not listed)
 
-- Neuro-Symbolic Reasoning in Probabilistic Systems, Dagstuhl 2022
-- POMDPs in Verification, Lorentz Center 2022
-- Synthesising Probabilistic Programs, SynCop 2022 (invited)
-- Runtime Monitoring in Markov Decision Processes, DESTION 2021, RP 2021
-- Parameter Synthesis in Markov Models, OWLS 2020 (invited), GI Kolloquium 2021
-- Complexity of Memoryless Policies in POMDPs, FUNCTION 2021 (invited)
-- Panelist at RL-CONFORM 2021
+- **Multi-Objective Model Checking** @ MODEM 2024 (*keynote*, ECAI workshop)
+- **Probabilistic Verification Overview** @ ASML Data Science Seminar 2024 (company talk)
+- **Recent Trends in Probabilistic Verification** @ Dagstuhl 2024, (*tutorial*)
+- **Open Problems in Parameter Synthesis in MDPs** @ Dagstuhl 2024
+- **Verification Techniques for Probabilistic Models and Programs** (with Joost-Pieter Katoen) @ UAI 2022 (*tutorial*) + appliedAI GmbH 2023
+- **Neuro-Symbolic Reasoning in Probabilistic Systems** @ Dagstuhl 2022
+- **Shielding POMDPs** @ LIVE 2022 (ETAPS Workshop)
+- **POMDPs in Verification** @ Lorentz Center 2022
+- **Synthesising Probabilistic Programs** @ SynCop 2022 (*keynote*, ETAPS Workshop)
+- **Runtime Monitoring in Markov Decision Processes** @ DESTION 2021 + RP 2021 + KWT Workshop 2024
+- **Parameter Synthesis in Markov Models** @ OWLS 2020 *(invited)* +  GI Kolloquium 2021
+- **Complexity of Memoryless Policies in POMDP** @ FUNCTION 2021 *(invited)*
 
 Teaching
 ======
@@ -80,18 +85,16 @@ See the list of recent [teaching activities and student projects](../teaching).
 Academic Service
 ======
 
-### Committee Work
-- Radboud Science Faculty Diversitee Committee (Staff Diversity, Outreach)
-- ETAPS E.V. (Finance control, HotCRP hosting)
-
 ### Membership
 - ELLIS  
 - VERSEN
 - SigAlg.nl
 
 ### Organization
-- Dagstuhl Seminar 'Scalable Analysis of Probabilistic Models and Programs' 2023
+- Storm-Days 2025
+- ASPIRE Workshop 2025
 - Dagstuhl Meeting 'Towards A Unified Interface For Modern Probabilistic Model Checking Tools' 2024
+- Dagstuhl Seminar 'Scalable Analysis of Probabilistic Models and Programs' 2023
 - VeriProp Workshop on Verification of Probabilistic Programs (2024, 2023, 2022, 2021, all co-located with CAV)
 - SEN Symposium 2023
 - ROCKS 2022 Workshop
@@ -99,13 +102,17 @@ Academic Service
 - the 'Aachener Informatik Tage', a STEM-outreach event for highschool pupils, several times
 between 2009 and 2014
 
+### Steering Committee
+- ETAPS (2025-2026)
+- VeriProp Workshop (Founded 2021, yearly co-located with CAV)
+
 ### PC/AE/Editor
 
 #### 2026 
-TACAS (chair)
+TACAS (co-chair)
 
 #### 2025
-CONCUR, RV, TACAS, 
+CONCUR, RV, TACAS, IFM
 
 #### 2024
 AAAI (safety track), ATVA, CAV, CONCUR, KR (seq decision making track), QEST/FORMATS, TACAS
@@ -132,3 +139,9 @@ ATVA (AE)
 ATVA, ADHS, CAV, CDC, Concur, FM, FMCAD, FSEN, FORTE, FOSSACS, Gandalf, HVC, ICALP, iFM, L4DC,  Memocode, MMB, PSI, SPIN, QEST, SafeComp, TACAS
 #### Journals
 FMSD, J. Intelligent Robot Syst, J.Systems and Software, JCST, Machine Learning, STTT, Trans. Autom. Control
+
+
+### Committee Work
+- Radboud Science Faculty Diversitee Committee (Staff Diversity, Outreach)
+- ETAPS E.V. (Finance control, HotCRP hosting)
+
