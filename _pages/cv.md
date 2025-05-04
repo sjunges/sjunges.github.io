@@ -38,6 +38,7 @@ Talks (Since 2020)
 ======
 (Conference presentations associated with a paper are not listed)
 
+- **Towards Reasoning with Millions of Environments** @ Simons Institute 2025 (*invited*)
 - **Multi-Objective Model Checking** @ MODEM 2024 (*keynote*, ECAI workshop)
 - **Probabilistic Verification Overview** @ ASML Data Science Seminar 2024 (company talk)
 - **Recent Trends in Probabilistic Verification** @ Dagstuhl 2024, (*tutorial*)
