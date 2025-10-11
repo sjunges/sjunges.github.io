@@ -101,8 +101,19 @@ In this topic,
 Below, I give a roughly (reverse) chronological order of supervised students.
 
 #### Since 2022 (All Radboud, unless noted otherwise)
-- Maris Galesloot, MCTS for multi-agent POMDPs (ELLIS Fellow) -- together with Nils Jansen
-- Wietze Koops, Efficient Multi-Agent A* (ELLIS Fellow) -- together with Nils Jansen
+- Thomas Maassen, Weighted Model Counting for Bounded Reachability in POMDPs (Msc)
+- Daniel Basgoeze, Deductive Probabilistic Program Verification with Decision Diagrams  (Msc, at RWTH) --  with Kevin Batz
+- Kevin van de Glind, Beyond the acyclic nature of Probabilistic Circuits (Msc, Math, ELLIS Fellow)
+- Johan Sijtsma, Active Automata Learning with Non-uniform Input Cost (Msc)
+- Astrid van der Jagt, Bag Planning with Constraint Solving (Msc)
+- Wessel van der Lans, Extending String Diagrams of MDPs (Bsc)
+- Jord Cluitmans, Learning Predictive Monitors for Autonomous Vehicles Using Binary Decision Trees (Bsc)
+- Pim Leerkes, New Asymptotic Bounds on the Minimal Optimal Strategy Sets of Parametric MDPs   (Bsc)
+- Jorrit de Boer, Solving Robust Reachability Using Quantified Boolean Formulas (Bsc)
+- Arthur Al-Sett, Planning problems with rechargable energy in non-deterministic environments
+ (Bsc, Math)
+- Maris Galesloot, MCTS for multi-agent POMDPs (Msc, ELLIS Fellow) -- together with Nils Jansen
+- Wietze Koops, Efficient Multi-Agent A* (Msc, ELLIS Fellow) -- together with Nils Jansen
 - Kevin van de Glind, Control improvisation with infinite horizons (Bsc)
 - Stefan Boneschanscher, Feature-based Random Constraints in Control Improvisation (Bsc)
 - Iwan Litjens, an MCTS-based AI playing The Crew (Bsc)
