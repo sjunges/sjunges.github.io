@@ -15,6 +15,10 @@ Education
 * M.Sc. in Computer Science, RWTH Aachen University, 2015
 * B.Sc. in Computer Science, RWTH Aachen University, 2012
 
+Awards
+======
+* Best Master thesis 2015 (Faculty day computer science), 2015
+
 Work experience
 ======
 * Sep 2021 - now: Assistant Professor (tenured)
