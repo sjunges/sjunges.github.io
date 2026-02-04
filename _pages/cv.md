@@ -110,7 +110,7 @@ between 2009 and 2014
 ### PC/AE/Editor
 
 #### 2026 
-TACAS (co-chair)
+TACAS (co-chair), ATVA, NEUS, QEST+FORMATS, RV, VMCAI
 
 #### 2025
 CONCUR, RV, TACAS, IFM
