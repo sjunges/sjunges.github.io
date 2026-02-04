@@ -109,6 +109,9 @@ between 2009 and 2014
 
 ### PC/AE/Editor
 
+#### 2027
+TACAS
+
 #### 2026 
 TACAS (co-chair), ATVA, NEUS, QEST+FORMATS, RV, VMCAI
 
