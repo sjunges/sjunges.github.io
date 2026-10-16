@@ -38,6 +38,7 @@ Talks (Since 2020)
 ======
 (Conference presentations associated with a paper are not listed)
 
+- **Satisfiability Modulo Probabilistic Model Checking for Concise and Robust Policies** @ SPIN 2026 + SynCoP 2026 (*invited*, ETAPS)
 - **Towards Reasoning with Millions of Environments** @ Simons Institute 2025 (*invited*)
 - **Multi-Objective Model Checking** @ MODEM 2024 (*keynote*, ECAI workshop)
 - **Probabilistic Verification Overview** @ ASML Data Science Seminar 2024 (company talk)
@@ -110,7 +111,7 @@ between 2009 and 2014
 ### PC/AE/Editor
 
 #### 2027
-TACAS
+AAAI (SPC), CAV, LICS
 
 #### 2026 
 TACAS (co-chair), ATVA, NEUS, QEST+FORMATS, RV, VMCAI

@@ -42,7 +42,7 @@ Master Thesis Students and Interns in our Group
 
 Former Guests (> 1 month)
 --------------------
-* Filip Macák, from TU Brno, 09/2025 to 11/2025
+* Filip Macák, from TU Brno, 09/2025 to 11/2025 and in 9/2026
 * Florian Wittbold, from Uni Duisburg-Essen, 05/2025 to 06/2025
 * Alyzia-Maria Konsta, from Technical University of Denmark, 02/2024 to 05/2024
 * Roman Andriushchenko, from TU Brno, 10/2023 to 12/2023, hosted with [Nils Jansen](https://nilsjansen.org) and in 9/2024
